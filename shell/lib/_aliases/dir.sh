@@ -14,6 +14,6 @@ alias nv='navi'
 
 # Git
 alias g='git'
-alias gs='git status'
+alias gis='git status'
 alias gl='git lg'
 alias gll='git lg --all'
