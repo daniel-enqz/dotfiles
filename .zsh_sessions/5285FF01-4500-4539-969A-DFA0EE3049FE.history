@@ -1,0 +1,8 @@
+ls -la
+ls -la
+code
+echo $0
+ls -la
+ped
+pwd
+touch .hushlogin

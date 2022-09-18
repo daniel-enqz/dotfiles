@@ -1,0 +1,36 @@
+{
+	"Create simple arrow function": {
+		"prefix": "fa",
+		"body": [
+			"() => {",
+			"  $0",
+			"}"
+		],
+		"description": "Create a simple arrow function"
+	},
+	"Create arrow function with arguments": {
+		"prefix": "faa",
+		"body": [
+			"($0) => {",
+			"  ",
+			"}"
+		],
+		"description": "Create a arrow function with cursor on arguments/params"
+	},
+	"Create inline arrow function": {
+		"prefix": "fai",
+		"body": [
+			"() => {}"
+		],
+		"description": "Create an inline arrow function"
+	},
+	"Create an arrow function with response params": {
+		"prefix": "far",
+		"body": [
+			"response => {",
+			"  $0",
+			"}"
+		],
+		"description": "Create an arrow function with response params"
+	}
+}

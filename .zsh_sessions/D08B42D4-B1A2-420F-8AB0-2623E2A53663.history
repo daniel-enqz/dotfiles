@@ -1,0 +1,29 @@
+ls -la
+ls -la
+code
+echo $0
+ls -la
+ped
+pwd
+touch .hushlogin
+ls -la
+export
+ls -la
+brew
+xcode-select --install
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile\
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew update
+git
+ls -la
+brew upgrade git || brew install git\
+brew upgrade gh || brew install gh\
+brew upgrade wget || brew install wget\
+brew upgrade imagemagick || brew install imagemagick\
+brew upgrade jq || brew install jq\
+brew upgrade openssl || brew install openssl
+brew install --cask visual-studio-code
+code
+code
+code
