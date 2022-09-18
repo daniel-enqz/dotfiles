@@ -1,3 +1,0 @@
-black==22.3.0
-flake8==3.9.2
-requests==2.26.0
