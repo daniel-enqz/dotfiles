@@ -19,6 +19,8 @@
 
 [alias]
   co = checkout
+  a = add
+  gc = git commit
   st = status -sb
   br = branch
   ci = commit
