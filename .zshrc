@@ -9,12 +9,16 @@
 # Zsh configuration
 # -----------------
 
+#PATHS
+# Load rbenv if installed (to manage your Ruby versions)
+export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
+type -a rbenv > /dev/null && eval "$(rbenv init -)"
+
 #
 # History
-#x
+#
 
 # Functions
-
 # Remote Search Using FZF
 _display_message() {
   dirtomove=$(ls | fzf)
@@ -41,6 +45,14 @@ function ltt {
   [ -n "$fname" ] || source "$HOME/.zim/lazy/main.sh"
 
   load_time_track
+}
+
+function python_setup {
+  fname=$(declare -f -F ps)
+
+  [ -n "$fname" ] || source "$HOME/.zim/lazy/python.sh"
+
+  ps
 }
 
 function update_all {
@@ -84,7 +96,7 @@ WORDCHARS=${WORDCHARS//[\/]}
 #
 
 # Set a custom prefix for the generated aliases. The default prefix is 'G'.
-#zstyle ':zim:git' aliases-prefix 'g'
+zstyle ':zim:git' aliases-prefix 'g'
 
 #
 # input
