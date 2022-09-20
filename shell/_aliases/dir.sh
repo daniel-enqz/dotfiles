@@ -6,4 +6,7 @@ alias cdt='cd $HOME/main/telos'
 alias cdd='cd $HOME/.dotfiles'
 
 # Directories
-alias la='ls -la
+alias la='ls -la'
+
+# Shortcuts
+alias nv='navi'
