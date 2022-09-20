@@ -1,0 +1,10 @@
+% update
+
+# Update Brew and Zim
+update_all
+
+# Update Zim Modules
+zim_modules
+
+# Update Zim
+update_zim
