@@ -1,6 +1,6 @@
 # -----------------
 # Lazy Imports
-function i_ruby {
+function iruby {
   fname=$(declare -f -F load_ruby)
 
   [ -n "$fname" ] || source "$HOME/.dotfiles/lazy/ruby.sh"
@@ -8,7 +8,7 @@ function i_ruby {
   load_ruby
 }
 
-function i_python {
+function ipython {
 
   fname=$(declare -f -F load_python)
 
@@ -17,7 +17,7 @@ function i_python {
   load_python
 }
 
-function i_node {
+function inode {
   fname=$(declare -f -F load_node)
 
   [ -n "$fname" ] || source "$HOME/.dotfiles/lazy/node.sh"
@@ -25,7 +25,7 @@ function i_node {
   load_node
 }
 
-function i_all {
+function iall {
   i_ruby
   i_python
   i_node

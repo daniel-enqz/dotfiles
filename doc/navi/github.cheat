@@ -5,20 +5,24 @@ $ branch: git branch | awk '{print $NF}'
 
 % Import
 # Import Ruby
-echo i_ruby
+echo iruby
 
 # Import Python
-echo i_python
+echo ipython
 
 # Import Node
-echo i_node
+echo inode
 
-% Update
-# Update All
-echo zimfw update && zimfw upgrade && brew update
+% Brew
+# Update brew
+echo brew update
 
-# Update Zim
-echo "zimfw update && zimfw upgrade"
+% Zim
+# Upgrade Zim
+echo zimfw upgrade
 
 # Update Zim Modules
-echo zimfw uninstall -f && zimfw install -f
+echo zimfw update
+
+# New Zim Module Added
+echo zimfw uninstall && zimfw install
