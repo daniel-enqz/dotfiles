@@ -26,3 +26,8 @@ echo zimfw update
 
 # New Zim Module Added
 echo zimfw uninstall && zimfw install
+
+% Localhost
+# Kill Server
+kill -9 <PID>
+$ PID: lsof -wni tcp:3000 | awk '{print $2}'
