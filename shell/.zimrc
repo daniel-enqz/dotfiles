@@ -18,6 +18,8 @@ zmodule input
 zmodule termtitle
 # Utility aliases and functions. Adds colour to ls, grep and less.
 zmodule utility
+# Formats the path to the current working directory to be used by prompts.
+zmodule prompt-pwd
 
 #
 # Prompt
@@ -27,7 +29,7 @@ zmodule duration-info
 # Exposes git repository status information to prompts, used by asciiship.
 zmodule git-info
 # A heavily reduced, ASCII-only version of the Spaceship and Starship prompts.
-zmodule asciiship
+zmodule sorin
 
 #
 # Completion
