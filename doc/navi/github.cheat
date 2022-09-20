@@ -1,6 +1,24 @@
-% git, code
-
+% Git
 # Change branch
 git checkout <branch>
-
 $ branch: git branch | awk '{print $NF}'
+
+% Import
+# Import Ruby
+echo i_ruby
+
+# Import Python
+echo i_python
+
+# Import Node
+echo i_node
+
+% Update
+# Update All
+echo zimfw update && zimfw upgrade && brew update
+
+# Update Zim
+echo "zimfw update && zimfw upgrade"
+
+# Update Zim Modules
+echo zimfw uninstall -f && zimfw install -f
