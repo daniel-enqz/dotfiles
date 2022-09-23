@@ -16,6 +16,7 @@
 [core]
   pager = less -FRSX
   editor = code --wait
+	excludesfile = /Users/daniel-enqz/.gitignore
 
 [alias]
   co = checkout
