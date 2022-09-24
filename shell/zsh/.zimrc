@@ -29,7 +29,7 @@ zmodule duration-info
 # Exposes git repository status information to prompts, used by asciiship.
 zmodule git-info
 # A heavily reduced, ASCII-only version of the Spaceship and Starship prompts.
-zmodule enqz
+zmodule asciiship
 
 #
 # Completion
@@ -39,7 +39,6 @@ zmodule enqz
 zmodule zsh-users/zsh-completions --fpath src
 # Enables and configures smart and extensive tab completion.
 # completion must be sourced after all modules that add completion definitions.
-zmodule asciiship
 
 #
 # Modules that must be initialized last
