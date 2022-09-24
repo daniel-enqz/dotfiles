@@ -5,5 +5,6 @@ ln -s "$HOME/.dotfiles/shell/zsh/.zshrc" "$HOME/.zshrc"
 ln -s "$HOME/.dotfiles/shell/zsh/.zshenv" "$HOME/.zshenv"
 ln -s "$HOME/.dotfiles/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$HOME/.dotfiles/shell/zsh/.zimrc" "$HOME/.zimrc"
+ln -s "$HOME/.dotfiles/shell/zsh/.zim" "$HOME/.zim"
 # Recursivity
 # ln -s "$HOME/.dotfiles/lazy/" "$HOME/.zim/lazy"
