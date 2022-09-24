@@ -1,5 +1,3 @@
-/Users/daniel-enqz/.nvm/versions/node/v16.15.1/lib
-├── corepack@0.10.0
-├── webpack-dev-server@4.11.0
-└── yarn@1.22.19
-
+corepack
+webpack-dev-server
+yarn
