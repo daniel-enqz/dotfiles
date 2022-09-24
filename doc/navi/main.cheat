@@ -17,6 +17,9 @@ echo inode
 # Update brew
 echo brew update
 
+# Upgrade brew packages
+echo brew upgrade
+
 % Zim
 # Upgrade Zim
 echo zimfw upgrade
