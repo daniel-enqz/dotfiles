@@ -1,4 +1,2 @@
 # Startup
-- Check for zsh installation
-- Install Zim
-- Install Tldrc
+cd ~ && git clone && cd .dotfiles/startup && sh startup.sh

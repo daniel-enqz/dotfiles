@@ -3,16 +3,6 @@
 git checkout <branch>
 $ branch: git branch | awk '{print $NF}'
 
-% Import
-# Import Ruby
-echo iruby
-
-# Import Python
-echo ipython
-
-# Import Node
-echo inode
-
 % Brew
 # Update brew
 echo brew update

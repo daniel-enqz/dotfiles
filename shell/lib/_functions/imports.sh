@@ -24,9 +24,3 @@ function inode {
 
   load_node
 }
-
-function iall {
-  i_ruby
-  i_python
-  i_node
-}
