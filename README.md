@@ -1,2 +1,4 @@
 # Startup
-´cd ~ && git clone && cd .dotfiles/startup && sh startup.sh
+
+
+cd ~ && git clone && cd .dotfiles/startup && sh startup.sh
