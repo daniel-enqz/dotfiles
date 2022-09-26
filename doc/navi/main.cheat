@@ -24,3 +24,7 @@ echo zimfw uninstall && zimfw install
 # Kill Server
 kill -9 <PID>
 $ PID: lsof -wni tcp:3000 | awk '{print $2}'
+
+% Postgres
+rm /opt/homebrew/var/postgres/postmaster.pid
+brew services restart postgresql
