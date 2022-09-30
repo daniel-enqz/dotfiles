@@ -5,20 +5,20 @@ $ branch: git branch | awk '{print $NF}'
 
 % Brew
 # Update brew
-echo brew update
+brew update
 
 # Upgrade brew packages
-echo brew upgrade
+brew upgrade
 
 % Zim
 # Upgrade Zim
-echo zimfw upgrade
+zimfw upgrade
 
 # Update Zim Modules
-echo zimfw update
+zimfw update
 
 # New Zim Module Added
-echo zimfw uninstall && zimfw install
+zimfw uninstall && zimfw install
 
 % Localhost
 # Kill Server
@@ -27,6 +27,5 @@ $ PID: lsof -wni tcp:3000 | awk '{print $2}'
 
 % Postgres
 # Start Postgres
-
 rm /opt/homebrew/var/postgres/postmaster.pid
 brew services restart postgresql
