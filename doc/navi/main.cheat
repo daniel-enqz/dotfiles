@@ -20,8 +20,8 @@ zimfw update
 # New Zim Module Added
 zimfw uninstall && zimfw install
 
-% Localhost
-# Kill Server
+% Process
+# Kill Localhost Server
 kill -9 <PID>
 $ PID: lsof -wni tcp:3000 | awk '{print $2}'
 
