@@ -21,9 +21,13 @@ zimfw update
 zimfw uninstall && zimfw install
 
 % Process
-# Kill Localhost Server
+# Kill Localhost 3000
 kill -9 <PID>
 $ PID: lsof -wni tcp:3000 | awk '{print $2}'
+
+# Kill Localhost 5000
+kill -9 <PID>
+$ PID: lsof -wni tcp:5000 | awk '{print $2}'
 
 % Postgres
 # Start Postgres
