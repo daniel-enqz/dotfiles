@@ -11,3 +11,8 @@ alias la='ls -la'
 
 # Shortcuts
 alias nv='navi'
+
+# Git
+alias g='git'
+alias gs='git status'
+alias gl='git lg'
