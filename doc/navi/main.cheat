@@ -29,7 +29,9 @@ $ PID: lsof -wni tcp:3000 | awk '{print $2}'
 kill -9 <PID>
 $ PID: lsof -wni tcp:5000 | awk '{print $2}'
 
-% Postgres
+% Services
 # Start Postgres
-rm /opt/homebrew/var/postgres/postmaster.pid
 brew services restart postgresql
+
+# Start Redis
+brew services restart redis
