@@ -24,3 +24,11 @@ function inode {
 
   load_node
 }
+
+function ijava {
+  fname=$(declare -f -F load_java)
+
+  [ -n "$fname" ] || source "$HOME/.dotfiles/lazy/java.sh"
+
+  load_java
+}
