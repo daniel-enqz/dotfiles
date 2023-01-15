@@ -1,4 +1,6 @@
 chromedriver
 corepack
+webpack
+webpack-cli
 webpack-dev-server
 yarn
