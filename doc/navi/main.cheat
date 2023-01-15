@@ -35,3 +35,7 @@ brew services restart postgresql
 
 # Start Redis
 brew services restart redis
+
+% Network
+# Get IP Address
+ipconfig getifaddr en0
