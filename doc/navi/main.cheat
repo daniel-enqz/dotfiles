@@ -39,3 +39,10 @@ brew services restart redis
 % Network
 # Get IP Address
 ipconfig getifaddr en0
+
+% Rails
+# Open credentials
+EDITOR=vim rails credentials:edit
+
+# Open credentials in vs code
+EDITOR="code --wait" rails credentials:edit
