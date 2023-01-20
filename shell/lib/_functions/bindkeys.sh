@@ -18,9 +18,9 @@ _git_branches() {
   git checkout $(echo "$branch" | awk '{print $1}')
 }
 
-zle         -N    _display_message
+zle      -N    _display_message
 bindkey  '^h'  _display_message
-zle -N _reverse_search
-bindkey '^r' _reverse_search
-zle -N _git_branches
-bindkey '^b' _git_branches
+zle      -N    _reverse_search
+bindkey  '^r'  _reverse_search
+zle      -N    _git_branches
+bindkey  '^b'    _git_branches
