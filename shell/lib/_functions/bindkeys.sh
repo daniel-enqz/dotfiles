@@ -31,6 +31,8 @@ function giaa {
   read -p "Enter chore: " chore
   read -p "Enter the description: " description
 
+  echo "Commit message: ${type}\t<${chore}>\t${description}"
+
   # Construct the commit message and commit the changes
   git commit -m "${type}\t<${chore}>\t${description}"
 }
