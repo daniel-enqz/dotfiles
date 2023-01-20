@@ -37,6 +37,9 @@ function giaa {
 
   # Construct the commit message and commit the changes
   git commit -m "${type}<${chore}>${description}"
+
+  # Push the changes
+  git push
 }
 
 # ----------------- Extra Functions -----------------
