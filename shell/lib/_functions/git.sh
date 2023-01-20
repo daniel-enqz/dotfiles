@@ -3,11 +3,11 @@ function ga {
   git add .
 
   # Ask the user to select a type:
-  types=("feat" "fix" "chore" "docs" "ref" "style" "test")
+  typeset -A types=(["feat"]="feat" ["fix"]="fix" ["chore"]="chore" ["docs"]="docs" ["ref"]="ref" ["style"]="style" ["test"]="test")
   PS3="🍀 Select type: "
   select choice in "feat" "fix" "chore" "docs" "ref" "style" "test"
   do
-      type=${types[$((choice-1))]}
+      type="${types[$choice]}"
       break;
   done
 
