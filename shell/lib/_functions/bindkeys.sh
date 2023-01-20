@@ -17,10 +17,16 @@ zle -N _reverse_search
 bindkey '^r' _reverse_search
 
 # ----------------- Git -----------------
-# Create a git add with a commit messahe like: "feat<tab>description"
 function giaa {
   git add .
-  git commit -m "$1<$2>$3"
+
+  # Prompt for input for the three parts of the commit message
+  read -p "Enter the type of commit (feat, fix, chore, docs, ref, style, test): " type
+  read -p "Enter chore name: " chore
+  read -p "Enter the description: " description
+
+  # Construct the commit message and commit the changes
+  git commit -m "${type}\t${chore}\t${description}"
 }
 
 # ----------------- Extra Functions -----------------
