@@ -20,13 +20,19 @@ bindkey '^r' _reverse_search
 function giaa {
   git add .
 
-  # Prompt for input for the three parts of the commit message
-  read -p "Enter the type of commit (feat, fix, chore, docs, ref, style, test): " type
-  read -p "Enter chore name: " chore
+  types=("feat" "fix" "chore" "docs" "ref" "style" "test")
+  PS3="Enter the type of commit: "
+  select choice in "feat" "fix" "chore" "docs" "ref" "style" "test"
+  do
+      type=${types[$((choice-1))]}
+      break;
+  done
+
+  read -p "Enter chore: " chore
   read -p "Enter the description: " description
 
   # Construct the commit message and commit the changes
-  git commit -m "${type}\t${chore}\t${description}"
+  git commit -m "${type}\t<${chore}>\t${description}"
 }
 
 # ----------------- Extra Functions -----------------
