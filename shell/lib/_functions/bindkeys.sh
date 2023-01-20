@@ -29,6 +29,7 @@ function giaa {
       break;
   done
 
+  input=$(dialog --inputbox "Enter your name:" 10 30 3>&1 1>&2 2>&3 3>&- )
   chore=$(whiptail "Enter chore:" 10 30 3>&1 1>&2 2>&3 3>&- )
   description=$(whiptail "Enter description:" 10 30 3>&1 1>&2 2>&3 3>&- )
 
