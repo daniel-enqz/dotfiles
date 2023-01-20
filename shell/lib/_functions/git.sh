@@ -6,7 +6,7 @@ function ga {
   PS3="🍀 Select type: "
   select choice in "feat" "fix" "chore" "docs" "ref" "style" "test"
   do
-      type="[$choice]"
+      type="$choice"
       break;
   done
 
