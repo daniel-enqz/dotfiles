@@ -29,10 +29,10 @@ function giaa {
       break;
   done
 
-  echo "Chore:"
+  echo "🌲 Chore:"
   read chore
 
-  echo "Description:"
+  echo "🧼 Description:"
   read description
 
   # Construct the commit message and commit the changes
