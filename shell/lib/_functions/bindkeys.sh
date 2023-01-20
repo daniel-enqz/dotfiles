@@ -29,11 +29,14 @@ function giaa {
       break;
   done
 
-  chore=$(dialog --inputbox "🧼 Chore:" 10 30 3>&1 1>&2 2>&3 3>&- )
-  description=$(dialog --inputbox "🌲Description:" 10 30 3>&1 1>&2 2>&3 3>&- )
+  echo "Chore:"
+  read chore
+
+  echo "Description:"
+  read description
 
   # Construct the commit message and commit the changes
-  git commit -m "${type}\t<${chore}>\t${description}"
+  git commit -m "${type}<${chore}>${description}"
 }
 
 # ----------------- Extra Functions -----------------
