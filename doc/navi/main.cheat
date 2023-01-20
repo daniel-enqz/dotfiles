@@ -1,8 +1,3 @@
-% Git
-# Change branch
-git checkout <branch>
-$ branch: git branch | awk '{print $NF}'
-
 % Brew
 # Update brew
 brew update
@@ -44,8 +39,5 @@ brew services restart redis
 ipconfig getifaddr en0
 
 % Rails
-# Open credentials
-EDITOR=vim rails credentials:edit
-
 # Open credentials in vs code
 EDITOR="code --wait" rails credentials:edit
