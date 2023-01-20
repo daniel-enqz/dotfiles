@@ -16,6 +16,13 @@ bindkey  '^h'  _display_message
 zle -N _reverse_search
 bindkey '^r' _reverse_search
 
+# ----------------- Git -----------------
+# Create a git add with a commit messahe like: "feat<tab>description"
+function giaa {
+  git add .
+  git commit -m "$1<$2>$3"
+}
+
 # ----------------- Extra Functions -----------------
 function ltt {
   for i in $(seq 1 10); do time zsh -i -c exit; done
