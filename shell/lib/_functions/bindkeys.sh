@@ -22,15 +22,15 @@ function giaa {
 
   # Ask the user to select a type:
   types=("feat" "fix" "chore" "docs" "ref" "style" "test")
-  PS3="Enter the type of commit: "
+  PS3="Select type: "
   select choice in "feat" "fix" "chore" "docs" "ref" "style" "test"
   do
       type=${types[$((choice-1))]}
       break;
   done
 
-  # Ask the user to type a description:
-  read -p "Enter the description of the commit: " description
+  chore=$(whiptail "Enter chore:" 10 30 3>&1 1>&2 2>&3 3>&- )
+  description=$(whiptail "Enter description:" 10 30 3>&1 1>&2 2>&3 3>&- )
 
   # Construct the commit message and commit the changes
   git commit -m "${type}\t<${chore}>\t${description}"

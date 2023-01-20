@@ -18,7 +18,6 @@ bindkey -e
 
 # Prompt for spelling correction of commands.
 #setopt CORRECT
-setopt no_clobber
 
 # Customize spelling correction prompt.
 #SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
