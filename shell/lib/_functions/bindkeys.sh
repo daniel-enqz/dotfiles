@@ -11,38 +11,16 @@ _reverse_search() {
   LBUFFER=$selected_command
 }
 
+_git_branches() {
+  local branches branch
+  branches=$(git branch -a --format='%(refname:short)') &&
+  branch=$(echo "$branches" | fzf +s +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}')
+}
+
 zle         -N    _display_message
 bindkey  '^h'  _display_message
 zle -N _reverse_search
 bindkey '^r' _reverse_search
-
-# ----------------- Git -----------------
-function giaa {
-  git add .
-
-  # Ask the user to select a type:
-  types=("feat" "fix" "chore" "docs" "ref" "style" "test")
-  PS3="🍀 Select type: "
-  select choice in "feat" "fix" "chore" "docs" "ref" "style" "test"
-  do
-      type=${types[$((choice-1))]}
-      break;
-  done
-
-  echo "🌲 Chore:"
-  read chore
-
-  echo "🧼 Description:"
-  read description
-
-  # Construct the commit message and commit the changes
-  git commit -m "${type}<${chore}>${description}"
-
-  # Push the changes
-  git push
-}
-
-# ----------------- Extra Functions -----------------
-function ltt {
-  for i in $(seq 1 10); do time zsh -i -c exit; done
-}
+zle -N _git_branches
+bindkey '^b' _git_branches
