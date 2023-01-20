@@ -22,14 +22,15 @@ function giaa {
 
   # Ask the user to select a type:
   types=("feat" "fix" "chore" "docs" "ref" "style" "test")
-  PS3="Select type: "
+  PS3="🍀 Select type: "
   select choice in "feat" "fix" "chore" "docs" "ref" "style" "test"
   do
       type=${types[$((choice-1))]}
       break;
   done
 
-  chore=$(dialog --inputbox "Chore:" 10 30 3>&1 1>&2 2>&3 3>&- )
+  chore=$(dialog --inputbox "🧼 Chore:" 10 30 3>&1 1>&2 2>&3 3>&- )
+  description=$(dialog --inputbox "🌲Description:" 10 30 3>&1 1>&2 2>&3 3>&- )
 
   # Construct the commit message and commit the changes
   git commit -m "${type}\t<${chore}>\t${description}"
