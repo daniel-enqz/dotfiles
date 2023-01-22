@@ -16,7 +16,7 @@ function ga {
   read scope
 
   echo "🧼 Description:"
-  read description
+  read -r description
 
   # Construct the commit message and commit the changes
   git commit -m "${type}<${scope}>${description}"
