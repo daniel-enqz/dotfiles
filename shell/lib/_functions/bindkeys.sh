@@ -4,12 +4,17 @@
 # Remote Search Using FZF
 _display_message() {
   dirtomove=$(ls | fzf)
-  cd "$dirtomove"
+  cd "$dirtomove" || return
 }
 
 # Reverse Search Using FZF
 _reverse_search() {
-  local selected_command=$(fc -rl 1 | awk '{$1="";print substr($0,2)}' | fzf)
+  local selected_command
+  selected_command=$(fc -rl 1 | awk '{$1="";print substr($0,2)}' | fzf)
+  if [ $? -ne 0 ]; then
+    echo "Error: command failed"
+    exit 1
+  fi
   LBUFFER=$selected_command
 }
 
