@@ -10,32 +10,24 @@
     chsh -s $(which zsh)
     ````
 
-2. [Set up your `~/.zshrc` file](#set-up-zshrc)
+2. [👆 `~/.zshrc` | Content explanation](#zshrc-content-explanation)
 
-3. [Create your `~/.zimrc` file](#create-zimrc)
+3. [👆 `~/.zimrc` | Content explanation](#create-zimrc)
 
 4. Restart your terminal and you're done. Enjoy your Zsh IMproved!
 
 
-#### Set up `~/.zshrc`
+#### `~/.zshrc` content explanation
 
-Add the lines below to your `~/.zshrc` file, in the following order:
-
-1. To use our `degit` tool by default to install modules:
+1. Optionl if you do not have git installed:
    ```zsh
    zstyle ':zim:zmodule' use 'degit'
    ````
-   This is optional, and only required if you don't have `git` installed (yes,
-   Zim works even without `git`!)
 
-2. To set where the directory used by Zim will be located:
+2. The default location of Zim will be in our home directory, we are not including it in our dotfiles because it has a lot of information:
    ```zsh
    ZIM_HOME=~/.zim
    ```
-   The value of `ZIM_HOME` can be any directory your user has write access to.
-   You can even set it to a cache directory like `${XDG_CACHE_HOME}/zim` or
-   `~/.cache/zim` if you also include the step below, that automatically
-   downloads the `zimfw` plugin manager.
 
 3. To automatically download the `zimfw` plugin manager if missing:
    ```zsh
@@ -79,3 +71,10 @@ Add the lines below to your `~/.zshrc` file, in the following order:
 > 1. `cd ~`
 > 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
 > 3. `sh .dotfiles/startup/startup.sh`
+
+
+Zim is fast
+------------
+<a href="https://github.com/zimfw/zimfw/wiki/Speed">
+  <img src="https://zimfw.github.io/images/results.svg">
+</a>
