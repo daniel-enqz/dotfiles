@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ln -s "$HOME/.dotfiles/git/.gitconfig" "$HOME/.gitconfig"
 ln -s "$HOME/.dotfiles/lazy/" "$HOME/.gitignore_global"
 ln -s "$HOME/.dotfiles/shell/zsh/.hushlogin" "$HOME/.hushlogin"

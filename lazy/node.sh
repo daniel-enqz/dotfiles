@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function load_node() {
   # Load nvm (to manage your node versions)
   export NVM_DIR="$HOME/.nvm"

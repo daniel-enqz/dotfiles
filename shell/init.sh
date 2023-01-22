@@ -1,3 +1,5 @@
+#!/bin/bash
+
 alias sudo='sudo '
 
 # register all aliases and functions
