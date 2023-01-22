@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Functions
 # Remote Search Using FZF
 _display_message() {

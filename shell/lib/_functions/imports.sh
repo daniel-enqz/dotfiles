@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # -----------------
 # Lazy Imports
 function iruby {

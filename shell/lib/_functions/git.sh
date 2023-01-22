@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ----------------- Git -----------------
 function ga {
   git add .

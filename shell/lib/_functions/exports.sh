@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function export_packages() {
   brew services stop --all
   brew bundle dump --file="$DOTFILES_DIR"/exports/brew/Brewfile --force

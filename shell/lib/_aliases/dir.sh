@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Jumps
 alias o.='open .'
 alias vs='code .'
