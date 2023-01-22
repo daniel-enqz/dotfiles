@@ -3,10 +3,10 @@
 alias sudo='sudo '
 
 # register all aliases and functions
-for aliasToSource in "$HOME/.dotfiles/shell/lib/_aliases/"*; do
+for aliasToSource in "$DOTFILES_DIR/shell/lib/_aliases/"*; do
   source "$aliasToSource"
 done
 
-for functionToSource in "$HOME/.dotfiles/shell/lib/_functions/"*; do
+for functionToSource in "$DOTFILES_DIR/shell/lib/_functions/"*; do
   source "$functionToSource"
 done
