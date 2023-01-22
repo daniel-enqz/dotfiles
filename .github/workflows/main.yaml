@@ -9,6 +9,8 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    env:
+      HOME: /home/runner
 
     steps:
     - name: Checkout code
