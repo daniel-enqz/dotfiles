@@ -16,4 +16,4 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Lint shell scripts
-      run: shellcheck -C -e SC2010,SC2012 $(find . -name '*.sh' -not -path './lazy/*)
+      run: shellcheck -C -e SC2010,SC2012 $(find . -name '*.sh' -not -path './lazy/*')
