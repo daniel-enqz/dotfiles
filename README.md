@@ -17,9 +17,8 @@ chsh -s $(which zsh)
 
 ### 🎉 You are all set!!! Check the following resources:
 
-> [👆 `~/.zshrc` | Content explanation](#zshrc-content-explanation)
+> [👆 `~/.zshrc` and  `~/.zimrc` | Content explanation](#content-explanation)
 
-> [👆 `~/.zimrc` | Content explanation](#create-zimrc)
 
 
 Zim is fast
@@ -28,48 +27,7 @@ Zim is fast
   <img src="https://zimfw.github.io/images/results.svg">
 </a>
 
-#### `~/.zshrc` content explanation
-
-1. Optionl if you do not have git installed:
-   ```zsh
-   zstyle ':zim:zmodule' use 'degit'
-   ````
-
-2. The default location of Zim will be in our home directory, we are not including it in our dotfiles because it has a lot of information:
-   ```zsh
-   ZIM_HOME=~/.zim
-   ```
-
-3. To automatically download the `zimfw` plugin manager if missing:
-   ```zsh
-   # Download zimfw plugin manager if missing.
-   if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
-     curl -fsSL --create-dirs -o ${ZIM_HOME}/zimfw.zsh \
-         https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
-   fi
-   ```
-   Or if you use `wget` instead of `curl`:
-   ```zsh
-   # Download zimfw plugin manager if missing.
-   if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
-     mkdir -p ${ZIM_HOME} && wget -nv -O ${ZIM_HOME}/zimfw.zsh \
-         https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
-   fi
-   ```
-   This is optional. If you choose to not include this step, you should manually
-   download the `zimfw.zsh` script once and keep it at `${ZIM_HOME}`.
-
-4. To automatically install missing modules and update the static initialization
-   script if missing or outdated:
-   ```zsh
-   # Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
-   if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
-     source ${ZIM_HOME}/zimfw.zsh init -q
-   fi
-   ```
-   This step is optional, but highly recommended. If you choose to not include
-   it, you must remember to manually run `zimfw install` every time after you
-   update your [`~/.zimrc`](#create-zimrc) file.
+#### Content explanation
 
 5. To source the static script, that will initialize your modules:
    ```zsh
