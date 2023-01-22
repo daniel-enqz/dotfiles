@@ -15,7 +15,7 @@ _reverse_search() {
     echo "Error: selected_command failed"
     exit 1
   fi
-  LBUFFER=$selected_command
+  # LBUFFER=$selected_command
 }
 
 _git_branches() {
