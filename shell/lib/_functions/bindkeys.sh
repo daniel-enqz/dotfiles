@@ -9,14 +9,10 @@ _display_message() {
 
 # Reverse Search Using FZF
 _reverse_search() {
-  local selected_command
-  selected_command=$(fc -rl 1 | awk '{$1="";print substr($0,2)}' | fzf)
-  if ! selected_command; then
-    echo "Error: selected_command failed"
-    exit 1
-  fi
-  # LBUFFER=$selected_command
+  local selected_command=$(fc -rl 1 | awk '{$1="";print substr($0,2)}' | fzf)
+  LBUFFER=$selected_command
 }
+
 
 _git_branches() {
   local branches branch
