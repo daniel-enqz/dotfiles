@@ -22,7 +22,7 @@ _git_branches() {
   local branches branch
   branches=$(git branch -a --format='%(refname:short)') &&
   branch=$(echo "$branches" | fzf +s +m) &&
-  git checkout $(echo "$branch" | awk '{print $1}')
+  git checkout "$(echo "$branch" | awk '{print $1}')"
 }
 
 zle      -N    _display_message
