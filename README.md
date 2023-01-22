@@ -21,7 +21,7 @@ chsh -s $(which zsh)
 
 - zimfw plugin manager installs modules at `~/.zim/modules`.
 - This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
-- The modules you want to use are defined in `~/.zimrc ` (This is the initial config file we build)
+- The modules you want to use are defined in `~/.zimrc ` (This file just configures our plugin manager zimfw)
 
 #### Some interesting lines in zshrc
 
