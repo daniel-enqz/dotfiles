@@ -12,6 +12,8 @@ _reverse_search() {
   local selected_command
   selected_command=$(fc -rl 1 | awk '{$1="";print substr($0,2)}' | fzf)
   LBUFFER=$selected_command
+
+  # LBUFFER is the buffer that is currently being edited
 }
 
 
