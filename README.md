@@ -20,6 +20,20 @@ chsh -s $(which zsh)
 ### Content explanation
 
    ```zsh
+   # You are setting the Zim location here:
+   ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
+   
+   # This is a large code bit checks if zimfw plugin manager if missing, and downloads it.
+   if [[ ! -e ${ZIM_HOME}/zimfw.zsh ]]; then
+   # [...]
+   fi
+   
+   # This is super important, it downloads missing modules and updates ${ZIM_HOME}/init.zsh if missing or outdated.
+   if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZDOTDIR:-${HOME}}/.zimrc ]]; then
+     source ${ZIM_HOME}/zimfw.zsh init -q
+   fi
+
+   
    # This will initialize modules for you, its in tour ~/.zshrc
    source ${ZIM_HOME}/init.zsh
    ```
