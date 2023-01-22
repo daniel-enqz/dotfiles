@@ -14,4 +14,4 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Lint shell scripts
-      run: shellcheck $(find . -name '*.sh' -not -path './startup.sh')
+      run: shellcheck $(find . -name '*.sh' -not -path './startup/startup.sh')
