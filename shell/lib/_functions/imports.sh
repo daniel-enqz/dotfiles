@@ -5,7 +5,7 @@
 function iruby {
   fname=$(declare -f -F load_ruby)
 
-  [ -n "$fname" ] || source "$HOME/lazy/ruby.sh"
+  [ -n "$fname" ] || source "$HOME/.dotfiles/lazy/ruby.sh"
 
   load_ruby
 }

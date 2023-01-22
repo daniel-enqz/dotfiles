@@ -10,10 +10,10 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     env:
-      HOME: /home/runner
+      DOTFILES_DIR: /home/runner
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Lint shell scripts
-      run: shellcheck -C -e SC1090,SC2010,SC2012 $(find . -name '*.sh' -not -path './startup/startup.sh')
+      run: shellcheck -C $(find . -name '*.sh' -not -path './startup/startup.sh')
