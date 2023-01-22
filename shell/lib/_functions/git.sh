@@ -13,7 +13,7 @@ function ga {
   done
 
   echo "🌲 Scope:"
-  read scope
+  read -r scope
 
   echo "🧼 Description:"
   read -r description
