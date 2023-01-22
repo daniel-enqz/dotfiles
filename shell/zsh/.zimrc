@@ -1,8 +1,4 @@
-# Start configuration added by Zim install {{{
-#
-# This is not sourced during shell startup, and it's only used to configure the
-# zimfw plugin manager.
-#
+# Configuration file for zimfw
 
 #
 # Modules
@@ -40,6 +36,9 @@ zmodule zsh-users/zsh-completions --fpath src
 # Enables and configures smart and extensive tab completion.
 # completion must be sourced after all modules that add completion definitions.
 zmodule completion
+
+
+
 #
 # Modules that must be initialized last
 #
