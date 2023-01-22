@@ -49,4 +49,4 @@ chsh -s $(which zsh)
 - Add new modules to `~/.zimrc`: `zimfw install`
 - Remove modules from `~/.zimrc`: `zimfw uninstall`
 - Update your modules to their latest revisions: `zimfw update`
-- Upgrade zimfw to its latest version: `imfw upgrade`
+- Upgrade zimfw to its latest version: `zimfw upgrade`
