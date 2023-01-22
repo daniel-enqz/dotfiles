@@ -17,20 +17,9 @@ chsh -s $(which zsh)
 
 ### 🎉 You are all set!!! Check the following resources:
 
-> [👆 `~/.zshrc` and  `~/.zimrc` | Content explanation](#content-explanation)
+### Content explanation
 
-
-
-Zim is fast
-------------
-<a href="https://github.com/zimfw/zimfw/wiki/Speed">
-  <img src="https://zimfw.github.io/images/results.svg">
-</a>
-
-#### Content explanation
-
-5. To source the static script, that will initialize your modules:
    ```zsh
-   # Initialize modules.
+   # This will initialize modules for you, its in tour ~/.zshrc
    source ${ZIM_HOME}/init.zsh
    ```
