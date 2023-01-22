@@ -17,7 +17,13 @@ chsh -s $(which zsh)
 
 ### 🎉 You are all set!!! Check the following resources:
 
-### Content explanation
+#### How it works:
+
+- zimfw plugin manager installs modules at `~/.zim/modules`.
+- This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
+- The modules you want to use are defined in `~/.zimrc ` (This is the initial config file we build)
+
+#### Some interesting lines in zshrc
 
    ```zsh
    # You are setting the Zim location here:
@@ -34,6 +40,15 @@ chsh -s $(which zsh)
    fi
 
    
-   # This will initialize modules for you, its in tour ~/.zshrc
+   # This will initialize modules for you.
    source ${ZIM_HOME}/init.zsh
    ```
+  
+#### More about our zimfw plugin manager:
+
+Add new modules to `~/.zimrc`: ```zimfw install
+Added new modules to ~/.zimrc? Run zimfw install.
+Removed modules from ~/.zimrc? Run zimfw uninstall.
+Want to update your modules to their latest revisions? Run zimfw update.
+Want to upgrade zimfw to its latest version? Run zimfw upgrade.
+For more information about the zimfw plugin manager, run zimfw help.
