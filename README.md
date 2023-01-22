@@ -46,9 +46,7 @@ chsh -s $(which zsh)
   
 #### More about our zimfw plugin manager:
 
-Add new modules to `~/.zimrc`: ```zimfw install
-Added new modules to ~/.zimrc? Run zimfw install.
-Removed modules from ~/.zimrc? Run zimfw uninstall.
-Want to update your modules to their latest revisions? Run zimfw update.
-Want to upgrade zimfw to its latest version? Run zimfw upgrade.
-For more information about the zimfw plugin manager, run zimfw help.
+- Add new modules to `~/.zimrc`: `zimfw install`
+- Remove modules from `~/.zimrc`: `zimfw uninstall`
+- Update your modules to their latest revisions: `zimfw update`
+- Upgrade zimfw to its latest version: `imfw upgrade`
