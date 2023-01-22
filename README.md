@@ -3,19 +3,30 @@
 ### First steps
 > 1. Check for zsh installation `zsh --version`
 > 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
+> 3. Set Zsh as the default shell, if you haven't done so already:
 
-### Install zim in your terminal.
-1. Set Zsh as the default shell, if you haven't done so already:
-    ```zsh
-    chsh -s $(which zsh)
-    ````
+```zsh
+chsh -s $(which zsh)
+````
 
-2. [👆 `~/.zshrc` | Content explanation](#zshrc-content-explanation)
+### Installation
+> 1. `cd ~`
+> 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
+> 3. `sh .dotfiles/startup/startup.sh`
 
-3. [👆 `~/.zimrc` | Content explanation](#create-zimrc)
 
-4. Restart your terminal and you're done. Enjoy your Zsh IMproved!
+### We will use Zim framwork for zsh, its super fast.
 
+> [👆 `~/.zshrc` | Content explanation](#zshrc-content-explanation)
+
+> [👆 `~/.zimrc` | Content explanation](#create-zimrc)
+
+
+Zim is fast
+------------
+<a href="https://github.com/zimfw/zimfw/wiki/Speed">
+  <img src="https://zimfw.github.io/images/results.svg">
+</a>
 
 #### `~/.zshrc` content explanation
 
@@ -65,16 +76,3 @@
    # Initialize modules.
    source ${ZIM_HOME}/init.zsh
    ```
-
-
-### Installation
-> 1. `cd ~`
-> 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
-> 3. `sh .dotfiles/startup/startup.sh`
-
-
-Zim is fast
-------------
-<a href="https://github.com/zimfw/zimfw/wiki/Speed">
-  <img src="https://zimfw.github.io/images/results.svg">
-</a>
