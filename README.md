@@ -15,7 +15,7 @@ chsh -s $(which zsh)
 > 3. `sh .dotfiles/startup/startup.sh`
 
 
-### We will use Zim framwork for zsh, its super fast.
+### 🎉 You are all set!!! Check the following resources:
 
 > [👆 `~/.zshrc` | Content explanation](#zshrc-content-explanation)
 
