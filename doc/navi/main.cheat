@@ -17,12 +17,12 @@ zimfw uninstall && zimfw install
 
 % Process
 # Kill Localhost 3000
-kill -9 <PID>
-$ PID: lsof -wni tcp:3000 | awk '{print $2}'
+kill -9 <PID_3000>
+$ PID_3000: lsof -wni tcp:3000 | awk '{print $2}'
 
 # Kill Localhost 5000
-kill -9 <PID>
-$ PID: lsof -wni tcp:5000 | awk '{print $2}'
+kill -9 <PID_5000>
+$ PID_5000: lsof -wni tcp:5000 | awk '{print $2}'
 
 # Sart server with mkcert
 rails s -b 'ssl://localhost:3000?key=localhost-key.pem&cert=localhost.pem'
@@ -43,18 +43,17 @@ ipconfig getifaddr en0
 EDITOR="code --wait" rails credentials:edit
 
 # Start server with tmux
-tmux new-session -d -s web 'bin/rails server -p 3000'
-tmux new-session -d -s css 'bin/rails tailwindcss:watch'
+tmux new-session -d -s web 'bin/rails server -p 3000'; echo "Server started"
+tmux new-session -d -s css 'bin/rails tailwindcss:watch'; echo "CSS started"
 
 % Tmux
 # Attach tmux session
 tmux attach -t <session_name>
-
-# Detach tmux session
-Ctrl + b + d
-
-# List tmux sessions
-tmux ls
+$ session_name: tmux ls | awk '{print $1}' | sed 's/://g'
 
 # Kill tmux session
 tmux kill-session -t <session_name>
+$ session_name: tmux ls | awk '{print $1}' | sed 's/://g'
+
+# Kill all tmux sessions
+tmux kill-server
