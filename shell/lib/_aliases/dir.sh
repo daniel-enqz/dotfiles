@@ -8,7 +8,7 @@ alias cdt='cd $HOME/main/telos'
 alias cdw='cd $HOME/main/lewagon'
 alias cdd='cd $HOME/.dotfiles'
 
-# Directories
+# Search
 alias la='ls -la'
 
 # Shortcuts

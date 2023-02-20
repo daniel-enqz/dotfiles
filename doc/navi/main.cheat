@@ -41,3 +41,20 @@ ipconfig getifaddr en0
 % Rails
 # Open credentials in vs code
 EDITOR="code --wait" rails credentials:edit
+
+# Start server with tmux
+tmux new-session -d -s web 'bin/rails server -p 3000'
+tmux new-session -d -s css 'bin/rails tailwindcss:watch'
+
+% Tmux
+# Attach tmux session
+tmux attach -t <session_name>
+
+# Detach tmux session
+Ctrl + b + d
+
+# List tmux sessions
+tmux ls
+
+# Kill tmux session
+tmux kill-session -t <session_name>
