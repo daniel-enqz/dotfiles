@@ -118,7 +118,7 @@ source ${ZIM_HOME}/init.zsh
 ```
 
 
-#### 🦦 About ZIM:
+#### 🦦 About [ZIM](https://github.com/zimfw/zimfw#set-up-zshrc):
 
 - zimfw plugin manager installs modules at `~/.zim/modules`.
 - This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
