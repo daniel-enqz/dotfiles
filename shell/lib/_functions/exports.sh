@@ -1,9 +1,6 @@
 #!/bin/bash
 
 function export_packages() {
-  inode
-  iruby
-  ipython
   brew services stop --all
   brew bundle dump --file="$DOTFILES_DIR"/exports/brew/Brewfile --force
   echo "Brew apps exported"
