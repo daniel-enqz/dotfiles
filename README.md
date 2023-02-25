@@ -2,8 +2,9 @@
 
 ### First steps
 > 1. Check for zsh installation `zsh --version`
-> 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
-> 3. Set Zsh as the default shell, if you haven't done so already:
+> 2. We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#set-up-zshrc), but if you follow this documentation steps you will be all set up.
+> 3. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
+> 4. Set Zsh as the default shell, if you haven't done so already:
 
 ```zsh
 chsh -s $(which zsh)
