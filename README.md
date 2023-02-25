@@ -6,7 +6,7 @@
 
 
 > I use Iterm2 with zsh shell.<br>
-> We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#set-up-zshrc), but if you follow this documentation steps you will be all set up.
+> We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#set-up-zshrc), but if you follow this guide steps you will be all set up.
 
 # Nice Terminal, Nice Theme:
 > 1. brew install --cask iterm2
