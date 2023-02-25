@@ -23,7 +23,7 @@ chsh -s $(which zsh)
 - This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
 - The modules you want to use are defined in `~/.zimrc ` (This file just configures our plugin manager zimfw)
 
-So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to use, when you run zimfw install, it will download the modules and create a static script at `~/.zim/init.zsh` that will initialize the modules for you.
+So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to use, when you run `zimfw install, it will download the modules and create a static script at `~/.zim/init.zsh` that will initialize the modules for you.
 
 #### Some interesting lines in zshrc
 
