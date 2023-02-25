@@ -46,18 +46,3 @@ EDITOR="code --wait" rails credentials:edit
 tmux new-session -d -s web 'bin/rails server -p 3000'; echo "Server started"
 tmux new-session -d -s css 'bin/rails tailwindcss:watch'; echo "CSS started"
 
-% Tmux
-# Attach tmux session
-tmux attach -t <attach_session_name>
-$ attach_session_name: tmux ls | awk '{print $1}' | sed 's/://g'
-
-# Kill tmux session
-tmux kill-session -t <kill_session_name>
-$ kill_session_name: tmux ls | awk '{print $1}' | sed 's/://g'
-
-# Detach tmux session
-tmux detach -s <detach_session_name>
-$ detach_session_name: tmux ls | awk '{print $1}' | sed 's/://g'
-
-# Kill all tmux sessions
-tmux kill-server
