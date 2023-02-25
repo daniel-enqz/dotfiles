@@ -31,8 +31,9 @@ chsh -s $(which zsh)
 source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
 ```
+
 #### 🦦 About `link_files.sh`
-<br>
+
 ```bash
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
 
@@ -45,13 +46,14 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 ```
-<br>
+
+
 This file creates symbolic links of files in this repo to your home_path `~`. <br>
 For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
 **IMPORTANT:** The existing .zshrc file in your home directory will be replaced by this symbolic link.
 
 #### 🦦 About `install_packages.sh`
-<br>
+
 ```bash
 
 brew services stop --all
@@ -62,7 +64,7 @@ pip install -r "$DOTFILES_DIR/exports/pip/requirements.txt"
 xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 
 ```
-<br>
+
 In here, we are installing all dependencies and pacakges from:
 
 🍺 Brewfile: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_<br> 
