@@ -50,7 +50,7 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 
 > This file creates symbolic links of files in this repo to your home_path `~`. <br>
 > For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
-> **IMPORTANT:** The existing .zshrc file in your home directory will be replaced by this symbolic link.
+> **🪴 Important:** The existing .zshrc file in your home directory will be replaced by this symbolic link.
 
 #### 🦦 About `install_packages.sh`
 
@@ -67,11 +67,11 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 
 In here, we are installing all dependencies and pacakges from:
 
-🍺 Brewfile: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_<br> 
-🐍 Pip for Python<br>
-🧼 npm for node packages
+> 🍺 Brewfile: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_<br> 
+> 🐍 Pip for Python<br>
+> 🧼 npm for node packages
 <br>
-> 🪴 Important: If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
+> **🪴 Important:** If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
 
 
 #### 🦦 About `.zshrc`(Your main terminal config, here we are configuring zim plus bringing some dependencies)
