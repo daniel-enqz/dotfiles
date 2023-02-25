@@ -1,6 +1,6 @@
 # Startup
 
-### First steps
+# First steps
 > 1. Check for zsh installation `zsh --version`
 > 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
 > 3. Set Zsh as the default shell, if you haven't done so already:
@@ -11,15 +11,15 @@ chsh -s $(which zsh)
 
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#set-up-zshrc), but if you follow this documentation steps you will be all set up.
 
-### Installation
+# Installation
 > 1. `cd ~`
 > 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
 > 3. `sh .dotfiles/startup/startup.sh`
 
 
-# 🎉 You are all set!!! Check the following resources:
+## 🎉 You are all set!!! Check the following resources:
 
-#### How startup.sh works:
+### How startup.sh works:
 
 1. First, the file will source two important files: 
 - link_files.sh
@@ -67,7 +67,7 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 
 ```
 
-#### How linked_files work:
+### How linked_files work:
 
 ## .zsrc (Your main terminal config, this are some of the most imprtant lines)
 
@@ -101,7 +101,7 @@ source ${ZIM_HOME}/init.zsh
 ```
 
 
-#### How ZIM works:
+### How ZIM works:
 
 - zimfw plugin manager installs modules at `~/.zim/modules`.
 - This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
