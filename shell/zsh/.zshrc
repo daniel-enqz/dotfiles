@@ -3,6 +3,7 @@
 # -----------------
 # Zsh configuration
 # -----------------
+
 # Import all shell partials
 source "$HOME/.dotfiles/shell/init.sh"
 # -----------------Import versions
