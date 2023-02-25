@@ -1,8 +1,8 @@
 # Startup
 ### Hello, Im @daniel_enqz 👋. <br>
-### This guide has help me learn more about bash and overall have bette rmanagement of my day-to-day workspace. Hope it helps to whoever finds this. 🍀
+### This guide has help me learn more about bash and overall have better management of my day-to-day workspace. Hope it helps to whoever finds this. 🍀
 
-### This are the efficiency numbers that you can approximetly achieve with this guide. (Opens 10 terminals in less than 1 second) ⚡️⚡️⚡️
+### This are the efficiency numbers that you can approximately achieve with this guide. <br> (Opens 10 terminals in less than 1 second) ⚡️⚡️⚡️
 ![Screenshot 2023-02-25 at 14 56 31](https://user-images.githubusercontent.com/72522628/221379311-bdcbb4c4-4827-4a64-9cd8-6aeacc05ee7e.jpg)
 
 
