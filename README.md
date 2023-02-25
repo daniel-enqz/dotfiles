@@ -70,8 +70,10 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 ## .zsrc (Your main terminal config, this are some of the most imprtant lines)
 
 ```zsh
-# Import all shell partials isnide shell/lib
+# Import all shell partials isnide shell/lib (functions and aliases, check them out)
 source "$HOME/.dotfiles/shell/init.sh"
+
+
 
 # -----------------Import functions inside shell/lib/functions/imports.sh
 iruby
