@@ -66,9 +66,9 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 ```
 
 > In here, we are installing all dependencies and pacakges from:
-> 🍺 Brewfile: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_<br> 
-> 🐍 Pip for Python<br>
-> 🧼 npm for node packages
+> 🍺 Brewfile: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_ <br> 
+> 🐍 Pip for Python <br>
+> 🧼 npm for node packages <br>
 > **🪴 Important:** If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
 
 
