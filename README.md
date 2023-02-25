@@ -1,5 +1,9 @@
 # Startup
 
+# Nice Terminal, Nice Theme:
+> 1. brew install --cask iterm2
+> 2. `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`
+
 # First steps
 > 1. Check for zsh installation `zsh --version`
 > 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
@@ -12,10 +16,13 @@ chsh -s $(which zsh)
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#set-up-zshrc), but if you follow this documentation steps you will be all set up.
 
 # Installation
+-Be sure that you have installed [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), (node)[https://github.com/lewagon/setup/blob/master/macos.md#nodejs with [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn), [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
+
 > 1. `cd ~`
 > 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
 > 3. `sh .dotfiles/startup/startup.sh`
-
+> 4. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
+> 5. After all this commands you can consider installing your rbenv, node, python versions, [gems](https://github.com/lewagon/setup/blob/master/macos.md#ruby), etc.
 
 ## 🎉 You are all set!!! Check the following resources:
 
