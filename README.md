@@ -22,7 +22,7 @@ chsh -s $(which zsh)
 ````
 
 # Installation
--Be sure that you have installed [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), (node)[https://github.com/lewagon/setup/blob/master/macos.md#nodejs with [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn), [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
+-Be sure that you have installed [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs with [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn), [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
 
 > 1. `cd ~`
 > 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
@@ -31,6 +31,8 @@ chsh -s $(which zsh)
 > 5. After all this commands you can consider installing your rbenv, node, python versions, [gems](https://github.com/lewagon/setup/blob/master/macos.md#ruby), etc.
 
 ## 🎉 You are all set!!! Check the following resources:
+
+> IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ i use.
 
 ### 🌱 Everything starts with `startup.sh`:
 
@@ -85,8 +87,6 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 
 
 #### 🦦 About `.zshrc`(Your main terminal config, here we are configuring zim plus bringing some dependencies)
-
-> IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ i use.
 
 ```zsh
 # Import all shell partials isnide shell/lib (functions and aliases, check them out)
