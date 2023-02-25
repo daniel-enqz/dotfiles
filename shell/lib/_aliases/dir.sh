@@ -14,6 +14,7 @@ alias la='ls -la'
 # Shortcuts
 alias nv='navi'
 alias tls='tmux ls'
+alias info='htop'
 
 # Git
 alias g='git'
