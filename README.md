@@ -60,7 +60,6 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 ```
 
-
 > This file creates symbolic links of files in this repo to your home_path `~`. <br>
 > For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
 > **🪴 Important:** The existing .zshrc file in your home directory will be replaced by this symbolic link.
@@ -86,6 +85,8 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 
 
 #### 🦦 About `.zshrc`(Your main terminal config, here we are configuring zim plus bringing some dependencies)
+
+> IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ i use.
 
 ```zsh
 # Import all shell partials isnide shell/lib (functions and aliases, check them out)
