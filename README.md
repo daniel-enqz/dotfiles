@@ -17,7 +17,7 @@ chsh -s $(which zsh)
 > 3. `sh .dotfiles/startup/startup.sh`
 
 
-### 🎉 You are all set!!! Check the following resources:
+# 🎉 You are all set!!! Check the following resources:
 
 #### How startup.sh works:
 
