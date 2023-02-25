@@ -30,7 +30,7 @@ source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
 ```
 2. About `link_files.sh`: This file will basically create a link from files inside this directory and link them to the `~home/path`.
-For example it will create a symbolic link at $HOME/.zshrc that points to $DOTFILES_DIR/shell/zsh/.zshrc file. The existing .zshrc file in your home directory will be replaced by this symbolic link.
+For example it will create a symbolic link at $HOME/.zshrc that points to $DOTFILES_DIR/shell/zsh/.zshrc file. The existing .zshrc file in your home directory will be replaced by this symbolic link. More detail about the content of each of the next files down. 👇
 
 ```bash
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
@@ -43,6 +43,22 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
+```
+
+3. Finally the `install_packages.sh` its very interesting as well 👀,  in here, we are installing all dependencies and pacakges specified in 3 different files:
+🍺 Brewfile
+🐍 Pip for Python
+🧼 npm for node packages
+
+```bash
+
+brew services stop --all
+brew bundle --file="$DOTFILES_DIR"/exports/brew/Brewfile --force
+
+pip install -r "$DOTFILES_DIR/exports/pip/requirements.txt"
+
+xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
+
 ```
 
 
