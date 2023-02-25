@@ -10,7 +10,7 @@
 
 # Nice Terminal, Nice Theme:
 > 1. brew install --cask iterm2
-> 2. `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`
+> 2. `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
 
 # First steps
 > 1. Check for zsh installation `zsh --version`
