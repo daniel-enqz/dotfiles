@@ -29,16 +29,17 @@ chsh -s $(which zsh)
 source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
 ```
-2. About `link_files.sh`: This file will basically create a link from files inside this directory and link them to the `~home/path`, so that we can access the `.zim` file of this Repo directly from your homepath.
+2. About `link_files.sh`: This file will basically create a link from files inside this directory and link them to the `~home/path`.
+For example it will create a symbolic link at $HOME/.zshrc that points to $DOTFILES_DIR/shell/zsh/.zshrc file. The existing .zshrc file in your home directory will be replaced by this symbolic link.
 
 ```bash
-#!/bin/bash
+TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
 
+ln -s "$TEMP_DOTFILES_DIR/shell/zsh/.zshenv" "$HOME/.zshenv"
 ln -s "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DOTFILES_DIR/lazy/" "$HOME/.gitignore_global"
 ln -s "$DOTFILES_DIR/shell/zsh/.hushlogin" "$HOME/.hushlogin"
 ln -s "$DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
-ln -s "$DOTFILES_DIR/shell/zsh/.zshenv" "$HOME/.zshenv"
 ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
