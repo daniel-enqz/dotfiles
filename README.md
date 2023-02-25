@@ -19,9 +19,9 @@ chsh -s $(which zsh)
 
 ## 🎉 You are all set!!! Check the following resources:
 
-### How startup.sh works:
+### 🌱 Everything starts with `startup.sh`:
 
-1. First, the file will source two important files: 
+#### It will source two important files: 
 - link_files.sh
 - install_packages.sh
 
@@ -31,10 +31,8 @@ chsh -s $(which zsh)
 source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
 ```
-2. About `link_files.sh`: This file creates symbolic links of files in this repo to your home_path `~`. <br>
-For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
-**IMPORTANT:** The existing .zshrc file in your home directory will be replaced by this symbolic link.
-
+#### 🦦 About `link_files.sh`
+<br>
 ```bash
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
 
@@ -47,16 +45,13 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 ```
+<br>
+This file creates symbolic links of files in this repo to your home_path `~`. <br>
+For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
+**IMPORTANT:** The existing .zshrc file in your home directory will be replaced by this symbolic link.
 
-3. Finally the `install_packages.sh` its very interesting as well 👀,  in here, we are installing all dependencies and pacakges specified in 3 different files (you can check each one of them before installation):<br>
-
-> 🪴 Important: If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
-
-
-🍺 Brewfile: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_<br> 
-🐍 Pip for Python<br>
-🧼 npm for node packages
-
+#### 🦦 About `install_packages.sh`
+<br>
 ```bash
 
 brew services stop --all
@@ -67,10 +62,17 @@ pip install -r "$DOTFILES_DIR/exports/pip/requirements.txt"
 xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 
 ```
+<br>
+In here, we are installing all dependencies and pacakges from:
 
-### How linked_files work:
+🍺 Brewfile: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_<br> 
+🐍 Pip for Python<br>
+🧼 npm for node packages
+<br>
+> 🪴 Important: If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
 
-## .zsrc (Your main terminal config, this are some of the most imprtant lines)
+
+#### 🦦 About `.zshrc`(Your main terminal config, here we are configuring zim plus bringing some dependencies)
 
 ```zsh
 # Import all shell partials isnide shell/lib (functions and aliases, check them out)
@@ -102,7 +104,7 @@ source ${ZIM_HOME}/init.zsh
 ```
 
 
-### How ZIM works:
+#### 🦦 About ZIM:
 
 - zimfw plugin manager installs modules at `~/.zim/modules`.
 - This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
