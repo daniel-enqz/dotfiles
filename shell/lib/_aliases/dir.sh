@@ -10,11 +10,12 @@ alias cdd='cd $HOME/.dotfiles'
 
 # Search
 alias la='ls -la'
-
-# Shortcuts
 alias nv='navi'
-alias tls='tmux ls'
 alias info='htop'
+
+# Tmux shortcuts
+alias tls='tmux ls'
+alias td='tmux detatch'
 
 # Git
 alias g='git'
