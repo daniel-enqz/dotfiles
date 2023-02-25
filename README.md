@@ -22,7 +22,7 @@ chsh -s $(which zsh)
 ````
 
 # Installation
-- Be sure that you have installed [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn), [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
+- Be sure that you have installed [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
 
 > 1. `cd ~`
 > 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
