@@ -1,4 +1,16 @@
 # Startup
+### Hello, Im @daniel_enqz 👋. <br>
+### With this tutorial I'm willing to make a guide of my Terminal configuration.
+### I could say this is more for me, to understand topics better and overall have better management of my day-to-day workspace 😅. 
+### But if it happens that you find this. HOPE IT HELPS!!🍀
+
+
+> I use Iterm2 with zsh shell.<br>
+> We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#set-up-zshrc), but if you follow this documentation steps you will be all set up.
+
+# Nice Terminal, Nice Theme:
+> 1. brew install --cask iterm2
+> 2. `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`
 
 # First steps
 > 1. Check for zsh installation `zsh --version`
@@ -9,15 +21,18 @@
 chsh -s $(which zsh)
 ````
 
-> We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#set-up-zshrc), but if you follow this documentation steps you will be all set up.
-
 # Installation
+- Be sure that you have installed [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
+
 > 1. `cd ~`
 > 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
 > 3. `sh .dotfiles/startup/startup.sh`
-
+> 4. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
+> 5. After all this commands you can consider installing your rbenv, node, python versions, [gems](https://github.com/lewagon/setup/blob/master/macos.md#ruby), *zim modules*, etc.
 
 ## 🎉 You are all set!!! Check the following resources:
+
+> IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ you can give it an glance 👀.
 
 ### 🌱 Everything starts with `startup.sh`:
 
@@ -46,7 +61,6 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 ```
-
 
 > This file creates symbolic links of files in this repo to your home_path `~`. <br>
 > For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
@@ -80,7 +94,7 @@ source "$HOME/.dotfiles/shell/init.sh"
 
 
 
-# -----------------Import functions inside shell/lib/functions/imports.sh
+# -----------------Import Lazy functions inside shell/lib/functions/imports.sh
 iruby
 # inode
 # ipython
