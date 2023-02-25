@@ -45,8 +45,8 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 ```
 
-3. Finally the `install_packages.sh` its very interesting as well 👀,  in here, we are installing all dependencies and pacakges specified in 3 different files:<br>
-🍺 Brewfile<br>
+3. Finally the `install_packages.sh` its very interesting as well 👀,  in here, we are installing all dependencies and pacakges specified in 3 different files (you can check each one of them before installation):<br>
+🍺 Brewfil: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_<br> 
 🐍 Pip for Python<br>
 🧼 npm for node packages
 
