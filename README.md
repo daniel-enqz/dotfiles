@@ -1,6 +1,6 @@
 # Startup
 ### Hello, Im @daniel_enqz 👋. <br>
-### With this tutrial I'm willing to make a resume of my Terminal configuration, I could say this is more for me, to unedrtand topics better and overall have better management of my day-to-day workspace 😅. But if it happens that you find this. HOPE IT HELPS!!🍀
+### With this tutorial I'm willing to make a resume of my Terminal configuration, I could say this is more for me, to unedrtand topics better and overall have better management of my day-to-day workspace 😅. But if it happens that you find this. HOPE IT HELPS!!🍀
 
 # Nice Terminal, Nice Theme:
 > 1. brew install --cask iterm2
