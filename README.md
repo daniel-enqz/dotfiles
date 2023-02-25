@@ -46,6 +46,10 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 ```
 
 3. Finally the `install_packages.sh` its very interesting as well 👀,  in here, we are installing all dependencies and pacakges specified in 3 different files (you can check each one of them before installation):<br>
+
+> 🪴 Important: If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is isnide exports.sh, file that is explained further in this documentation.
+
+
 🍺 Brewfil: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_<br> 
 🐍 Pip for Python<br>
 🧼 npm for node packages
