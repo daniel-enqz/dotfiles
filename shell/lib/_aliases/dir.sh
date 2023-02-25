@@ -15,7 +15,9 @@ alias info='htop'
 
 # Tmux shortcuts
 alias tls='tmux ls'
-alias td='tmux detatch'
+alias td='tmux detach'
+alias ts='tmux new -s'
+alias tds='tmux new-session -s -d'
 
 # Git
 alias g='git'
