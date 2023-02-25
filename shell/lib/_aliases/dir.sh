@@ -17,7 +17,8 @@ alias info='htop'
 alias tls='tmux ls'
 alias td='tmux detach'
 alias ts='tmux new -s'
-alias tds='tmux new-session -s -d'
+alias tds='tmux new-session -d -s'
+alias tas='tmux attach -t'
 
 # Git
 alias g='git'
