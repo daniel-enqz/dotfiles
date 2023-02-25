@@ -94,7 +94,7 @@ source "$HOME/.dotfiles/shell/init.sh"
 
 
 
-# -----------------Import functions inside shell/lib/functions/imports.sh
+# -----------------Import Lazy functions inside shell/lib/functions/imports.sh
 iruby
 # inode
 # ipython
