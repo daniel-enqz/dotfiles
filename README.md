@@ -32,7 +32,8 @@ source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
 ```
 2. About `link_files.sh`: This file creates symbolic links of files in this repo to your home_path `~`. <br>
-For example it will create a symbolic link at $HOME/.zshrc that points to $DOTFILES_DIR/shell/zsh/.zshrc file. The existing .zshrc file in your home directory will be replaced by this symbolic link.
+For example it will create a symbolic link at $HOME/.zshrc that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
+The existing .zshrc file in your home directory will be replaced by this symbolic link.
 
 ```bash
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
