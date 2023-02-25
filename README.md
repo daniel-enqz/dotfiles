@@ -27,7 +27,6 @@ chsh -s $(which zsh)
 > 1. `cd ~`
 > 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
 > 3. `sh .dotfiles/startup/startup.sh`
-> 4. Run `import_packages` (more info about what this does further in this guide 👇)
 > 4. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
 > 5. After all this commands you can consider installing your rbenv, node, python versions, [gems](https://github.com/lewagon/setup/blob/master/macos.md#ruby), etc.
 
