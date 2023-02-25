@@ -32,7 +32,7 @@ chsh -s $(which zsh)
 
 ## 🎉 You are all set!!! Check the following resources:
 
-> IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ i use.
+> IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ you can give it an glance 👀.
 
 ### 🌱 Everything starts with `startup.sh`:
 
