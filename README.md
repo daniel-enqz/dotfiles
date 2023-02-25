@@ -17,7 +17,35 @@ chsh -s $(which zsh)
 
 ### 🎉 You are all set!!! Check the following resources:
 
-#### How it works:
+#### How startup.sh works:
+
+1. First, the file will source two important files: 
+- link_files.sh
+- install_packages.sh
+
+```bash
+#!/bin/bash
+
+source "$DOTFILES_DIR/startup/lib/link_files.sh"
+source "$DOTFILES_DIR/startup/lib/install_packages.sh"
+```
+2. About `link_files.sh`: This file will basically create a link from files inside this directory and link them to the `~home/path`, so that we can access the `.zim` file of this Repo directly from your homepath.
+
+```bash
+#!/bin/bash
+
+ln -s "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DOTFILES_DIR/lazy/" "$HOME/.gitignore_global"
+ln -s "$DOTFILES_DIR/shell/zsh/.hushlogin" "$HOME/.hushlogin"
+ln -s "$DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
+ln -s "$DOTFILES_DIR/shell/zsh/.zshenv" "$HOME/.zshenv"
+ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
+ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
+ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
+```
+
+
+#### How ZIM works:
 
 - zimfw plugin manager installs modules at `~/.zim/modules`.
 - This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
