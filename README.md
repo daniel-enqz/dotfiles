@@ -2,12 +2,11 @@
 ### Hello, Im @daniel_enqz 👋. <br>
 ### This guide has help me learn more about bash and overall have better management of my day-to-day workspace. Hope it helps to whoever finds this. 🍀
 
-### This are the efficiency numbers that you can approximately achieve with this guide. <br> (Opens 10 terminals in less than 1 second) ⚡️⚡️⚡️
-![Screenshot 2023-02-25 at 14 56 31](https://user-images.githubusercontent.com/72522628/221379311-bdcbb4c4-4827-4a64-9cd8-6aeacc05ee7e.jpg)
-
-
 > I use Iterm2 with zsh shell.<br>
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#manual-installation), but if you follow this guide steps you will be all set up.
+
+### This are the efficiency numbers that you can approximately achieve with this guide. <br> (Opens 10 terminals in less than 1 second) ⚡️⚡️⚡️
+![Screenshot 2023-02-25 at 14 56 31](https://user-images.githubusercontent.com/72522628/221379311-bdcbb4c4-4827-4a64-9cd8-6aeacc05ee7e.jpg)
 
 # Nice Terminal, Nice Theme:
 > 1. brew install --cask iterm2
