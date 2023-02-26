@@ -66,6 +66,7 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 > This file creates symbolic links of files in this repo to your home_path `~`. <br>
 > For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
 > **🪴 Important:** The existing .zshrc file in your home directory will be replaced by this symbolic link.
+> **🪴 Important:** You can add more symbolic links, and just run the file with: `run_symbolic`
 
 #### 🦦 About `install_packages.sh`
 
