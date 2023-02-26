@@ -3,7 +3,7 @@
 ### Hello, Im @daniel_enqz 👋. <br>
 ### This guide has help me learn more about bash and overall have better management of my day-to-day workspace. Hope it helps to whoever finds this. 🍀
 
-> I use Iterm2 with zsh shell.<br>
+> I use Iterm2 with zsh shell and tmux.<br>
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#manual-installation), but if you follow this guide steps you will be all set up.
 
 ### This are the efficiency numbers that you can approximately achieve with this guide. <br> (Opens 10 terminals in less than 1 second) ⚡️⚡️⚡️
@@ -32,8 +32,11 @@ chsh -s $(which zsh)
 > 5. After all this commands you can consider installing your rbenv, node, python versions, [gems](https://github.com/lewagon/setup/blob/master/macos.md#ruby), *zim modules*, etc.
 
 ## 🎉 You are all set!!! Check the following resources:
-
 > IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ you can give it an glance 👀.
+- [About startup.sh](https://github.com/daniel-enqz/dotfiles/edit/main/README.md#-everything-starts-with-startupsh)
+- [About .zshrc](https://github.com/daniel-enqz/dotfiles/edit/main/README.md#-everything-starts-with-startupsh)
+- [About .zim](https://github.com/daniel-enqz/dotfiles/edit/main/README.md#-everything-starts-with-startupsh)
+- [About TMUX]()
 
 ### 🌱 Everything starts with `startup.sh`:
 
@@ -134,3 +137,9 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - Remove modules from `~/.zimrc`: `zimfw uninstall`
 - Update your modules to their latest revisions: `zimfw update`
 - Upgrade zimfw to its latest version: `zimfw upgrade`
+
+#### 🦦 About [TMUX](https://github.com/zimfw/zimfw#set-up-zshrc):
+> Tmux is allready configured in `config/tmux/tmux.config`
+> Here, we are setting stuff like key bindings, themes and plugins.
+> **🪴 Important:** Be sure to install plugin manager `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.
+> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file. 
