@@ -3,11 +3,11 @@
 ### Hello, Im @daniel_enqz 👋. <br>
 ### This guide has help me learn more about bash and overall have better management of my day-to-day workspace. Hope it helps to whoever finds this. 🍀
 
-> I use Iterm2 with zsh shell.<br>
+> I use Iterm2 with zsh shell and tmux.<br>
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#manual-installation), but if you follow this guide steps you will be all set up.
 
 ### This are the efficiency numbers that you can approximately achieve with this guide. <br> (Opens 10 terminals in less than 1 second) ⚡️⚡️⚡️
-![Screenshot 2023-02-25 at 14 56 31](https://user-images.githubusercontent.com/72522628/221379311-bdcbb4c4-4827-4a64-9cd8-6aeacc05ee7e.jpg)
+![Screenshot 2023-02-26 at 12 51 45](https://user-images.githubusercontent.com/72522628/221430646-8f050482-9824-482f-87f6-b9ade4c4710a.jpg)
 
 # Nice Terminal, Nice Theme:
 > 1. brew install --cask iterm2
@@ -32,8 +32,11 @@ chsh -s $(which zsh)
 > 5. After all this commands you can consider installing your rbenv, node, python versions, [gems](https://github.com/lewagon/setup/blob/master/macos.md#ruby), *zim modules*, etc.
 
 ## 🎉 You are all set!!! Check the following resources:
-
 > IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ you can give it an glance 👀.
+- [About startup.sh](https://github.com/daniel-enqz/dotfiles/blob/main/README.md#-everything-starts-with-startupsh)
+- [About .zshrc](https://github.com/daniel-enqz/dotfiles/blob/main/README.md#-everything-starts-with-startupsh)
+- [About .zim](https://github.com/daniel-enqz/dotfiles/blob/main/README.md#-everything-starts-with-startupsh)
+- [About TMUX](https://github.com/daniel-enqz/dotfiles/blob/main/README.md#-about-tmux)
 
 ### 🌱 Everything starts with `startup.sh`:
 
@@ -46,6 +49,7 @@ chsh -s $(which zsh)
 
 source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
+source "$DOTFILES_DIR/startup/lib/install_dependencies.sh"
 ```
 
 #### 🦦 About `link_files.sh` (alias to run: `run_sybmolic`)
@@ -82,11 +86,28 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 ```
 
 > In here, we are installing all dependencies and pacakges from:
-> 🍺 Brewfile: _(Cool packages such as: tldr, rbenv, navi, redis, wget)_ <br> 
+> 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br> 
 > 🐍 Pip for Python <br>
 > 🧼 npm for node packages <br>
 > **🪴 Important:** If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
 
+#### 🦦 About `install_dependecies.sh`
+
+```bash
+#!/bin/bash
+
+# FONTS FOR ITERM2
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+```
+> This file is incharged of installing powerline fonts for Iterm2 and our plugin manager for tmux.
 
 #### 🦦 About `.zshrc`(Your main terminal config, here we are configuring zim plus bringing some dependencies)
 
@@ -134,3 +155,9 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - Remove modules from `~/.zimrc`: `zimfw uninstall`
 - Update your modules to their latest revisions: `zimfw update`
 - Upgrade zimfw to its latest version: `zimfw upgrade`
+
+#### 🦦 About [TMUX](https://github.com/zimfw/zimfw#set-up-zshrc):
+> Tmux is allready configured in `config/tmux/tmux.config`<br>
+> Here, we are setting stuff like key bindings, themes and plugins.<br>
+> **🪴 Important:** Be sure to install plugin manager `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.<br>
+> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file. 
