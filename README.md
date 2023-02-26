@@ -49,6 +49,7 @@ chsh -s $(which zsh)
 
 source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
+source "$DOTFILES_DIR/startup/lib/install_dependencies.sh"
 ```
 
 #### 🦦 About `link_files.sh` (alias to run: `run_sybmolic`)
@@ -90,6 +91,23 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 > 🧼 npm for node packages <br>
 > **🪴 Important:** If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
 
+#### 🦦 About `install_dependecies.sh`
+
+```bash
+#!/bin/bash
+
+# FONTS FOR ITERM2
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+```
+> This file is incharged of installing powerline fonts for Iterm2 and our plugin manager for tmux.
 
 #### 🦦 About `.zshrc`(Your main terminal config, here we are configuring zim plus bringing some dependencies)
 
