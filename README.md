@@ -48,7 +48,7 @@ source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
 ```
 
-#### 🦦 About `link_files.sh` (This file can also be run with `run_sybmolic
+#### 🦦 About `link_files.sh` (alias to run: `run_sybmolic`)
 
 ```bash
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
