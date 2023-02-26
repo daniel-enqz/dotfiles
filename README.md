@@ -48,7 +48,7 @@ source "$DOTFILES_DIR/startup/lib/link_files.sh"
 source "$DOTFILES_DIR/startup/lib/install_packages.sh"
 ```
 
-#### 🦦 About `link_files.sh`
+#### 🦦 About `link_files.sh` (alias to run: `run_sybmolic`)
 
 ```bash
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
@@ -65,8 +65,8 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 
 > This file creates symbolic links of files in this repo to your home_path `~`. <br>
 > For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
-> **🪴 Important:** The existing .zshrc file in your home directory will be replaced by this symbolic link.
-> **🪴 Important:** You can add more symbolic links, and just run the file with: `run_symbolic`
+> **🪴 Important:** The existing .zshrc file in your home directory will be replaced by this symbolic link.<br>
+> **🪴 Important:** If in the future you have new config files, add them at .dotfiles and remember to add the symbolic link in this file. 
 
 #### 🦦 About `install_packages.sh`
 
