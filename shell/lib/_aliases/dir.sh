@@ -10,6 +10,7 @@ alias cdd='cd $HOME/.dotfiles'
 
 # Terminal
 alias c='clear'
+alias e='exit'
 
 # Search
 alias la='ls -la'
