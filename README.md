@@ -40,7 +40,7 @@ chsh -s $(which zsh)
 
 ### 🌱 Everything starts with `startup.sh`:
 
-#### It will source two important files: 
+#### It will source two important files:
 - link_files.sh
 - install_packages.sh
 
@@ -70,7 +70,7 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 > This file creates symbolic links of files in this repo to your home_path `~`. <br>
 > For example it will create a symbolic link at `$HOME/.zshrc` that points to `$DOTFILES_DIR/shell/zsh/.zshrc` file. <br>
 > **🪴 Important:** The existing .zshrc file in your home directory will be replaced by this symbolic link.<br>
-> **🪴 Important:** If in the future you have new config files, add them at .dotfiles and remember to add the symbolic link in this file. 
+> **🪴 Important:** If in the future you have new config files, add them at .dotfiles and remember to add the symbolic link in this file.
 
 #### 🦦 About `install_packages.sh`
 
@@ -86,7 +86,7 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 ```
 
 > In here, we are installing all dependencies and pacakges from:
-> 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br> 
+> 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br>
 > 🐍 Pip for Python <br>
 > 🧼 npm for node packages <br>
 > **🪴 Important:** If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
@@ -139,8 +139,6 @@ fi
 # This will initialize modules for you.
 source ${ZIM_HOME}/init.zsh
 ```
-
-
 #### 🦦 About [ZIM](https://github.com/zimfw/zimfw#set-up-zshrc):
 
 - zimfw plugin manager installs modules at `~/.zim/modules`.
@@ -160,4 +158,18 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 > Tmux is allready configured in `config/tmux/tmux.config`<br>
 > Here, we are setting stuff like key bindings, themes and plugins.<br>
 > **🪴 Important:** Be sure to install plugin manager `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.<br>
-> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file. 
+> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file.
+
+### Cool TMUX Commands:
+- `Ctrl + A + Shift + I`: This will install any plugin defined in this file.
+- `Ctrl + A + Shift + U`: This will update any plugin defined in this file.
+- `Ctrl + A + C`: This will create a new window.
+- `Ctrl + A + N`: This will go to the next window.
+- `Ctrl + A + P`: This will go to the previous window.
+- `Ctrl + A + 0`: You can change the number to go to any window.
+- `Ctrl + A + |`: This will split the window horizontally.
+- `Ctrl + A + -`: This will split the window vertically.
+- `Ctrl + A + (H, J, K, L)`: Resize the pane.
+- `Ctrl + A + (H, J, K, L)`: Move between panes.
+- `Ctrl + A + S`: See all sessions.
+- `Ctrl + A + W`: See all windows.
