@@ -33,10 +33,10 @@ chsh -s $(which zsh)
 
 ## 🎉 You are all set!!! Check the following resources:
 > IMPORTANT: I will not cover all the files under shell/lib, but there's some interesting stuff like _aliases and functions_ you can give it an glance 👀.
-- [About startup.sh](https://github.com/daniel-enqz/dotfiles/edit/main/README.md#-everything-starts-with-startupsh)
-- [About .zshrc](https://github.com/daniel-enqz/dotfiles/edit/main/README.md#-everything-starts-with-startupsh)
-- [About .zim](https://github.com/daniel-enqz/dotfiles/edit/main/README.md#-everything-starts-with-startupsh)
-- [About TMUX]()
+- [About startup.sh](https://github.com/daniel-enqz/dotfiles/blob/main/README.md#-everything-starts-with-startupsh)
+- [About .zshrc](https://github.com/daniel-enqz/dotfiles/blob/main/README.md#-everything-starts-with-startupsh)
+- [About .zim](https://github.com/daniel-enqz/dotfiles/blob/main/README.md#-everything-starts-with-startupsh)
+- [About TMUX](https://github.com/daniel-enqz/dotfiles/blob/main/README.md#-about-tmux)
 
 ### 🌱 Everything starts with `startup.sh`:
 
