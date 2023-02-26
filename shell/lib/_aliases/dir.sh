@@ -27,3 +27,6 @@ alias g='git'
 alias gis='git status'
 alias gl='git lg'
 alias gll='git lg --all'
+
+# Shell Scripts
+alias run_symbolic='sh $DOTFILES_DIR/startup/lib/link_files.sh'
