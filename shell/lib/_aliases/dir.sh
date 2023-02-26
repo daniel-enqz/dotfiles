@@ -8,9 +8,14 @@ alias cdt='cd $HOME/main/telos'
 alias cdw='cd $HOME/main/lewagon'
 alias cdd='cd $HOME/.dotfiles'
 
+# Terminal
+alias c='clear'
+
 # Search
 alias la='ls -la'
 alias nv='navi'
+
+# Info
 alias info='htop'
 
 # Tmux shortcuts
