@@ -97,5 +97,15 @@ for key ('^[[A' '^P' ${terminfo[kcuu1]}) bindkey ${key} history-substring-search
 for key ('^[[B' '^N' ${terminfo[kcud1]}) bindkey ${key} history-substring-search-down
 for key ('k') bindkey -M vicmd ${key} history-substring-search-up
 for key ('j') bindkey -M vicmd ${key} history-substring-search-down
+
+# let g:tmux_navigator_no_mappings = 1
+
+# noremap <silent> {c-j} :<C-U>TmuxNavigateLeft<cr>
+# noremap <silent> {c-k} :<C-U>TmuxNavigateDown<cr>
+# noremap <silent> {c-i} :<C-U>TmuxNavigateUp<cr>
+# noremap <silent> {c-l} :<C-U>TmuxNavigateRight<cr>
+# noremap <silent> {Previous-Mapping} :<C-U>TmuxNavigatePrevious<cr>
+
+
 unset key
 # zprof
