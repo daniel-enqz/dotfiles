@@ -4,7 +4,7 @@
 alias o.='open .'
 alias vs='code .'
 alias cdc='cd $HOME/main'
-alias cdcp='cd $HOME/main/GitHubRepos' 
+alias cdcp='cd $HOME/main/GitHubRepos/projects'
 alias cdt='cd $HOME/main/telos'
 alias cdw='cd $HOME/main/lewagon'
 alias cdd='cd $HOME/.dotfiles'
@@ -12,10 +12,10 @@ alias cdd='cd $HOME/.dotfiles'
 # Terminal
 alias c='clear'
 alias e='exit'
+alias nv='nvim'
 
 # Search
 alias la='ls -la'
-alias nv='navi'
 
 # Info
 alias info='htop'
