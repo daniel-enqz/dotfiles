@@ -1,0 +1,7 @@
+require("daniel-enqz.plugins-setup")
+require("daniel-enqz.core.options")
+require("daniel-enqz.core.keymaps")
+require("daniel-enqz.core.colorscheme")
+require("daniel-enqz.plugins.comment")
+require("daniel-enqz.plugins.nvim-tree")
+require("daniel-enqz.plugins.lualine")
