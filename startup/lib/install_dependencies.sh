@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # FONTS FOR ITERM2
+(
 git clone https://github.com/powerline/fonts.git --depth=1
-cd fonts
+cd fonts || exit
 ./install.sh
-cd ..
+)
 rm -rf fonts
 
 # tmux plugin manager
