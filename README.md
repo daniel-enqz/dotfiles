@@ -58,13 +58,15 @@ source "$DOTFILES_DIR/startup/lib/install_dependencies.sh"
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
 
 ln -s "$TEMP_DOTFILES_DIR/shell/zsh/.zshenv" "$HOME/.zshenv"
-ln -s "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DOTFILES_DIR/lazy/" "$HOME/.gitignore_global"
 ln -s "$DOTFILES_DIR/shell/zsh/.hushlogin" "$HOME/.hushlogin"
 ln -s "$DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
+ln -s "$DOTFILES_DIR/config/git/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DOTFILES_DIR/config/tmux/.tmux.conf" "$HOME/.tmux.conf"
+ln -s "$DOTFILES_DIR/config/tmux/.tmux" "$HOME/.tmux"
 ```
 
 > This file creates symbolic links of files in this repo to your home_path `~`. <br>
@@ -85,7 +87,7 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 
 ```
 
-> In here, we are installing all dependencies and pacakges from:
+> In here, we are installing all dependencies and pacakges from:<br>
 > 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br>
 > 🐍 Pip for Python <br>
 > 🧼 npm for node packages <br>
@@ -154,11 +156,11 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - Update your modules to their latest revisions: `zimfw update`
 - Upgrade zimfw to its latest version: `zimfw upgrade`
 
-#### 🦦 About [TMUX](https://github.com/zimfw/zimfw#set-up-zshrc):
+#### 🦦 About [TMUX](https://github.com/tmux):
 > Tmux is allready configured in `config/tmux/tmux.config`<br>
 > Here, we are setting stuff like key bindings, themes and plugins.<br>
 > **🪴 Important:** Be sure to install plugin manager `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.<br>
-> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file.
+> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file).
 
 ### Cool TMUX Commands:
 - `Ctrl + A + Shift + I`: This will install any plugin defined in this file.
