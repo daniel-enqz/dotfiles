@@ -58,13 +58,15 @@ source "$DOTFILES_DIR/startup/lib/install_dependencies.sh"
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
 
 ln -s "$TEMP_DOTFILES_DIR/shell/zsh/.zshenv" "$HOME/.zshenv"
-ln -s "$DOTFILES_DIR/git/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DOTFILES_DIR/lazy/" "$HOME/.gitignore_global"
 ln -s "$DOTFILES_DIR/shell/zsh/.hushlogin" "$HOME/.hushlogin"
 ln -s "$DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
+ln -s "$DOTFILES_DIR/config/git/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DOTFILES_DIR/config/tmux/.tmux.conf" "$HOME/.tmux.conf"
+ln -s "$DOTFILES_DIR/config/tmux/.tmux" "$HOME/.tmux"
 ```
 
 > This file creates symbolic links of files in this repo to your home_path `~`. <br>
@@ -85,7 +87,7 @@ xargs -I_ npm install -g "_" < "$DOTFILES_DIR/exports/npm/npm.txt"
 
 ```
 
-> In here, we are installing all dependencies and pacakges from:
+> In here, we are installing all dependencies and pacakges from:<br>
 > 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br>
 > 🐍 Pip for Python <br>
 > 🧼 npm for node packages <br>
