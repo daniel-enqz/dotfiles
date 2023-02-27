@@ -154,11 +154,11 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - Update your modules to their latest revisions: `zimfw update`
 - Upgrade zimfw to its latest version: `zimfw upgrade`
 
-#### 🦦 About [TMUX](https://github.com/zimfw/zimfw#set-up-zshrc):
+#### 🦦 About [TMUX](https://github.com/tmux):
 > Tmux is allready configured in `config/tmux/tmux.config`<br>
 > Here, we are setting stuff like key bindings, themes and plugins.<br>
 > **🪴 Important:** Be sure to install plugin manager `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.<br>
-> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file.
+> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file).
 
 ### Cool TMUX Commands:
 - `Ctrl + A + Shift + I`: This will install any plugin defined in this file.
