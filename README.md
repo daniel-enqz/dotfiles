@@ -163,15 +163,21 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 > **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file).
 
 ### Cool TMUX Commands:
-- `Ctrl + A + Shift + I`: This will install any plugin defined in this file.
-- `Ctrl + A + Shift + U`: This will update any plugin defined in this file.
-- `Ctrl + A + C`: This will create a new window.
-- `Ctrl + A + N`: This will go to the next window.
-- `Ctrl + A + P`: This will go to the previous window.
-- `Ctrl + A + 0`: You can change the number to go to any window.
-- `Ctrl + A + |`: This will split the window horizontally.
-- `Ctrl + A + -`: This will split the window vertically.
-- `Ctrl + A + (H, J, K, L)`: Resize the pane.
-- `Ctrl + A + (H, J, K, L)`: Move between panes.
+
+**Navigation**
 - `Ctrl + A + S`: See all sessions.
 - `Ctrl + A + W`: See all windows.
+- `Ctrl + A + (J, I, K, L)`: Resize the pane.
+- `Ctrl + A + (H, J, K, L)`: Move between panes.
+- `Ctrl + A + (P, N, number)`: Move between windows.
+
+**Creaion and deletion**
+- `Ctrl + A + X`: To close a pane.
+- `Ctrl + A + |`: This will split the window horizontally (creating new panes).
+- `Ctrl + A + -`: This will split the window vertically (creating new panes)
+- `Ctrl + A + C`: This will create a new window.
+
+**Plugin management**
+- `Ctrl + A + Shift + I`: This will install any plugin defined in this file.
+- `Ctrl + A + Shift + U`: This will update any plugin defined in this file.
+
