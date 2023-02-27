@@ -171,7 +171,7 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - `Ctrl + A + 0`: You can change the number to go to any window.
 - `Ctrl + A + |`: This will split the window horizontally.
 - `Ctrl + A + -`: This will split the window vertically.
-- `Ctrl + A + (H, J, K, L)`: Resize the pane.
+- `Ctrl + A + (J, I, K, L)`: Resize the pane.
 - `Ctrl + A + (H, J, K, L)`: Move between panes.
 - `Ctrl + A + S`: See all sessions.
 - `Ctrl + A + W`: See all windows.
