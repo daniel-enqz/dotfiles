@@ -5,3 +5,5 @@ require("daniel-enqz.core.colorscheme")
 require("daniel-enqz.plugins.comment")
 require("daniel-enqz.plugins.nvim-tree")
 require("daniel-enqz.plugins.lualine")
+require("daniel-enqz.plugins.telescope")
+
