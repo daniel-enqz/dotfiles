@@ -175,3 +175,4 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - `Ctrl + A + (H, J, K, L)`: Move between panes.
 - `Ctrl + A + S`: See all sessions.
 - `Ctrl + A + W`: See all windows.
+- `Ctrl + A + X`: To close a pane.
