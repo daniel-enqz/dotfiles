@@ -4,6 +4,7 @@
 alias o.='open .'
 alias vs='code .'
 alias cdc='cd $HOME/main'
+alias cdcp='cd $HOME/main/GutHubRepos' 
 alias cdt='cd $HOME/main/telos'
 alias cdw='cd $HOME/main/lewagon'
 alias cdd='cd $HOME/.dotfiles'
