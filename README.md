@@ -180,4 +180,5 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 **Plugin management**
 - `Ctrl + A + Shift + I`: This will install any plugin defined in this file.
 - `Ctrl + A + Shift + U`: This will update any plugin defined in this file.
+- `Ctrl + A + R`: Reload Tmux config file.
 
