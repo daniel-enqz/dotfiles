@@ -23,4 +23,5 @@ function ga {
 
   # Push the changes
   git push
+
 }
