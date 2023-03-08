@@ -13,6 +13,9 @@
 > 1. brew install --cask iterm2
 > 2. `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
 
+![Screenshot 2023-03-07 at 18 19 56](https://user-images.githubusercontent.com/72522628/223586414-25d14975-526d-46c8-ad36-1c3a67f4428e.jpg)
+
+
 # First steps
 > 1. Check for zsh installation `zsh --version`
 > 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
