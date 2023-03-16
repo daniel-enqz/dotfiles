@@ -185,3 +185,4 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - `Ctrl + A + Shift + U`: This will update any plugin defined in this file.
 - `Ctrl + A + R`: Reload Tmux config file.
 
+### TMUX AND NEOVIM CONFIG COMING SOON
