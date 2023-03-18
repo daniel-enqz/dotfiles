@@ -159,6 +159,17 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - Update your modules to their latest revisions: `zimfw update`
 - Upgrade zimfw to its latest version: `zimfw upgrade`
 
+### 🧞‍♂️ About our main installations, TMUX and NVIM!!! 
+
+![Screenshot 2023-03-17 at 17 47 39](https://user-images.githubusercontent.com/72522628/226070780-0eeee011-d598-49d6-9cc5-7631363d10c2.jpg)
+
+In this folder, you will store any important config file for your installations, as you can see, as of now, we have:
+- git
+- nvim
+- tmux
+
+You can further check this folders with more detail but I will explain each one of them below
+
 #### 🦦 About [TMUX](https://github.com/tmux):
 > Tmux is allready configured in `config/tmux/tmux.config`<br>
 > Here, we are setting stuff like key bindings, themes and plugins.<br>
@@ -188,16 +199,5 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 > First of all let's take a look at our config folder
 `/Users/user-name/.dotfiles/config`
 
-### 🧞‍♂️ About our main installations, TMUX and NVIM!!! 
-
-![Screenshot 2023-03-17 at 17 47 39](https://user-images.githubusercontent.com/72522628/226070780-0eeee011-d598-49d6-9cc5-7631363d10c2.jpg)
-
-In this folder, you will store any important config file for your installations, as you can see, as of now, we have:
-- git
-- nvim
-- tmux
-
-You can further check this folders with more detail but I will explain each one of them below
-
-### 🦀 TMUX CONFIG
+### 🦀 NVIM CONFIG
 
