@@ -1,4 +1,6 @@
 #!/bin/bash
+# Temporal
+alias cdcc="cd /Users/daniel-enqz/main/GitHubRepos/projects/Freelance/pgskl"
 
 # Jumps
 alias o.='open .'
