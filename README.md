@@ -192,8 +192,8 @@ You can further check this folders with more detail but I will explain each one 
 - `Ctrl + A + C`: This will create a new window.
 
 **Plugin management**
-- `Ctrl + A + Shift + I`: This will install any plugin defined in this file.
-- `Ctrl + A + Shift + U`: This will update any plugin defined in this file.
+- `Ctrl + A + Shift + I`: This will install any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)` 
+- `Ctrl + A + Shift + U`: This will update any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)`
 - `Ctrl + A + R`: Reload Tmux config file.
 
 > First of all let's take a look at our config folder
