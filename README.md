@@ -182,7 +182,7 @@ You can further check this folders with more detail but I will explain each one 
 - `Ctrl + A + S`: See all sessions.
 - `Ctrl + A + W`: See all windows.
 - `Ctrl + A + (J, I, K, L)`: Resize the pane.
-- `Ctrl + A + (H, J, K, L)`: Move between panes.
+- `Ctrl + (H, J, K, L)`: Move between panes.
 - `Ctrl + A + (P, N, number)`: Move between windows.
 
 **Creaion and deletion**
