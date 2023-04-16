@@ -196,8 +196,12 @@ You can further check this folders with more detail but I will explain each one 
 - `Ctrl + A + Shift + U`: This will update any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)`
 - `Ctrl + A + R`: Reload Tmux config file.
 
-> First of all let's take a look at our config folder
-`/Users/user-name/.dotfiles/config`
-
 ### 🦀 NVIM CONFIG
+`(/.dotfiles/config/nvim/init.lua)`
+> This file is incharged of managing plugins. When adding a plugin add it here and the initializie it in 
+![Screenshot 2023-04-16 at 12 07 08](https://user-images.githubusercontent.com/72522628/232332762-b2f1ef27-766c-4e4c-889b-8e37fd98b63b.jpg)
+
+```lua
+
+```
 
