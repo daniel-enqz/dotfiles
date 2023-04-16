@@ -198,10 +198,7 @@ You can further check this folders with more detail but I will explain each one 
 
 ### 🦀 NVIM CONFIG
 `(/.dotfiles/config/nvim/init.lua)`
-> This file is incharged of managing plugins. When adding a plugin add it here and the initializie it in 
+> This file is incharged of managing plugins. When adding a plugin add it here and the initializie each one of them in:
+> `(/.dotfiles/config/nvim/lua/user-name/plugins)`
 ![Screenshot 2023-04-16 at 12 07 08](https://user-images.githubusercontent.com/72522628/232332762-b2f1ef27-766c-4e4c-889b-8e37fd98b63b.jpg)
-
-```lua
-
-```
 
