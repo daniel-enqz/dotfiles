@@ -3,7 +3,7 @@
 alias cdcc="cd /Users/daniel-enqz/main/GitHubRepos/projects/Freelance/pgskl"
 
 # Jumps
-alias o.='open .'
+alias op='open .'
 alias vs='code .'
 alias cdc='cd $HOME/main'
 alias cdcp='cd $HOME/main/GitHubRepos/projects'
@@ -15,6 +15,7 @@ alias cdd='cd $HOME/.dotfiles'
 alias c='clear'
 alias e='exit'
 alias nv='nvim'
+alias tmp='mkdir -p /tmp/ && cd /tmp/'
 
 # Search
 alias la='ls -la'
