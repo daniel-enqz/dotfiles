@@ -182,7 +182,8 @@ You can further check this folders with more detail but I will explain each one 
 - `Ctrl + A + S`: See all sessions.
 - `Ctrl + A + W`: See all windows.
 - `Ctrl + A + (J, I, K, L)`: Resize the pane.
-- `Ctrl + A + (H, J, K, L)`: Move between panes.
+- `Ctrl + A + M`: Maximize pane.
+- `Ctrl + (H, J, K, L)`: Move between panes.
 - `Ctrl + A + (P, N, number)`: Move between windows.
 
 **Creaion and deletion**
@@ -192,12 +193,13 @@ You can further check this folders with more detail but I will explain each one 
 - `Ctrl + A + C`: This will create a new window.
 
 **Plugin management**
-- `Ctrl + A + Shift + I`: This will install any plugin defined in this file.
-- `Ctrl + A + Shift + U`: This will update any plugin defined in this file.
+- `Ctrl + A + Shift + I`: This will install any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)` 
+- `Ctrl + A + Shift + U`: This will update any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)`
 - `Ctrl + A + R`: Reload Tmux config file.
 
-> First of all let's take a look at our config folder
-`/Users/user-name/.dotfiles/config`
-
 ### 🦀 NVIM CONFIG
+`(/.dotfiles/config/nvim/init.lua)`
+> This file is incharged of managing plugins. When adding a plugin add it here and the initializie each one of them in:
+> `(/.dotfiles/config/nvim/lua/user-name/plugins)`
+![Screenshot 2023-04-16 at 12 07 08](https://user-images.githubusercontent.com/72522628/232332762-b2f1ef27-766c-4e4c-889b-8e37fd98b63b.jpg)
 
