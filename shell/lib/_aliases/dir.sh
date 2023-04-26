@@ -40,3 +40,5 @@ alias gll='git lg --all'
 
 # Shell Scripts
 alias run_symbolic='sh $DOTFILES_DIR/startup/lib/link_files.sh'
+
+
