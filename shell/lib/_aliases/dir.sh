@@ -7,8 +7,8 @@ alias op='open .'
 alias vs='code .'
 alias cdc='cd $HOME/main'
 alias cdcp='cd $HOME/main/GitHubRepos/projects'
-alias cdt='cd $HOME/main/telos'
-alias cdw='cd $HOME/main/lewagon'
+alias cdk='cd $HOME/main/Work/kubleau'
+alias cdw='cd $HOME/main/Work/lewagon'
 alias cdd='cd $HOME/.dotfiles'
 
 # Terminal
@@ -40,5 +40,3 @@ alias gll='git lg --all'
 
 # Shell Scripts
 alias run_symbolic='sh $DOTFILES_DIR/startup/lib/link_files.sh'
-
-
