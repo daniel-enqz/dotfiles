@@ -227,6 +227,11 @@ _G.packer_plugins = {
     path = "/Users/daniel-enqz/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors",
     url = "https://github.com/bluz71/vim-nightfly-guicolors"
   },
+  ["vim-rails"] = {
+    loaded = true,
+    path = "/Users/daniel-enqz/.local/share/nvim/site/pack/packer/start/vim-rails",
+    url = "https://github.com/tpope/vim-rails"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/daniel-enqz/.local/share/nvim/site/pack/packer/start/vim-surround",

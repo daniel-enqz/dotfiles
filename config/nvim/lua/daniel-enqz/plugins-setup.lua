@@ -106,6 +106,9 @@ return packer.startup(function(use)
 	-- copilot
 	use("github/copilot.vim")
 
+	-- rails
+	use("tpope/vim-rails")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

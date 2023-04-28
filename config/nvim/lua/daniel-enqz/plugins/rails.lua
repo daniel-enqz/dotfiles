@@ -1,4 +1,6 @@
-local vim_rails, cmp = pcall(require, "tpope/vim-rails")
-if not vim_rails then
+local setup, rails = pcall(require, "rails")
+if not setup then
 	return
 end
+
+rails.setup()
