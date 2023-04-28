@@ -109,6 +109,9 @@ return packer.startup(function(use)
 	-- rails
 	use("tpope/vim-rails")
 
+	-- rspec
+	use("thoughtbot/vim-rspec")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

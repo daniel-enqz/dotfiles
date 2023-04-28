@@ -232,6 +232,11 @@ _G.packer_plugins = {
     path = "/Users/daniel-enqz/.local/share/nvim/site/pack/packer/start/vim-rails",
     url = "https://github.com/tpope/vim-rails"
   },
+  ["vim-rspec"] = {
+    loaded = true,
+    path = "/Users/daniel-enqz/.local/share/nvim/site/pack/packer/start/vim-rspec",
+    url = "https://github.com/thoughtbot/vim-rspec"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/daniel-enqz/.local/share/nvim/site/pack/packer/start/vim-surround",
