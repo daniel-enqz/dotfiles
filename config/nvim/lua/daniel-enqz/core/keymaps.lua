@@ -60,5 +60,11 @@ keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git co
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
+-- rspec
+keymap.set("n", "<leader>t", ":call RunCurrentSpecFile()<CR>")
+keymap.set("n", "<leader>s", ":call RunNearestSpec()<CR>")
+keymap.set("n", "<leader>l", ":call RunLastSpec()<CR>")
+keymap.set("n", "<leader>a", ":call RunAllSpecs()<CR>")
+
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
