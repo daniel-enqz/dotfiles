@@ -61,10 +61,15 @@ keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git bra
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
 -- rspec
-keymap.set("n", "<leader>t", ":call RunCurrentSpecFile()<CR>")
-keymap.set("n", "<leader>s", ":call RunNearestSpec()<CR>")
-keymap.set("n", "<leader>l", ":call RunLastSpec()<CR>")
-keymap.set("n", "<leader>a", ":call RunAllSpecs()<CR>")
+keymap.set("n", "<leader>rsf", ":call RunCurrentSpecFile()<CR>")
+keymap.set("n", "<leader>rsn", ":call RunNearestSpec()<CR>")
+keymap.set("n", "<leader>rsl", ":call RunLastSpec()<CR>")
+keymap.set("n", "<leader>rsa", ":call RunAllSpecs()<CR>")
+
+-- Tmux Runner
+keymap.set("n", "<leader>tra", ":VtrAttachToPane<CR>") -- attach to tmux pane
+keymap.set("n", "<leader>trl", ":VtrSendLine<CR>") -- send current line to tmux
+keymap.set("n", "<leader>trf", ":VtrSendFile<CR>") -- send current file to tmux
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary

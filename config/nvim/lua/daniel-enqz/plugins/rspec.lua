@@ -3,4 +3,13 @@ if not setup then
 	return
 end
 
-rspec.setup()
+rspec.setup({
+	command = {
+		vim = {
+			"call VtrSendCommand('rspec {spec}')",
+		},
+		nvim = {
+			"lua require('rspec').run()",
+		},
+	},
+})
