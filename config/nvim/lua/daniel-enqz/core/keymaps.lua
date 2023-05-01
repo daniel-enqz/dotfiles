@@ -60,16 +60,17 @@ keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git co
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
+-- Tmux Runner
+keymap.set("n", "<leader>tra", ":VtrAttachToPane<CR>") -- attach to tmux pane
+keymap.set("n", "<leader>trl", ":VtrSendLine<CR>") -- send current line to tmux
+keymap.set("n", "<leader>trf", ":VtrSendFile<CR>") -- send current file to tmux
+
 -- rspec
 keymap.set("n", "<leader>rsf", ":call RunCurrentSpecFile()<CR>")
 keymap.set("n", "<leader>rsn", ":call RunNearestSpec()<CR>")
 keymap.set("n", "<leader>rsl", ":call RunLastSpec()<CR>")
 keymap.set("n", "<leader>rsa", ":call RunAllSpecs()<CR>")
-
--- Tmux Runner
-keymap.set("n", "<leader>tra", ":VtrAttachToPane<CR>") -- attach to tmux pane
-keymap.set("n", "<leader>trl", ":VtrSendLine<CR>") -- send current line to tmux
-keymap.set("n", "<leader>trf", ":VtrSendFile<CR>") -- send current file to tmux
+keymap.set("n", "<leader>rsg", ":VtrSendCommand bundle exec guard<CR>")
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>") -- mapping to restart lsp if necessary
