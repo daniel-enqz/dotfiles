@@ -24,7 +24,7 @@ alias la='ls -la'
 alias info='htop'
 
 # Tmux shortcuts
-alias tls='tmux lss'
+alias tls='tmux ls'
 alias td='tmux detach'
 alias tns='tmux new -s'
 alias tnds='tmux new-session -d -s'
