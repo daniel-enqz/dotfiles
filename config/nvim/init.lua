@@ -15,6 +15,4 @@ require("daniel-enqz.plugins.treesitter")
 require("daniel-enqz.plugins.gitsigns")
 require("daniel-enqz.plugins.copilot")
 require("daniel-enqz.plugins.rails")
-require("daniel-enqz.plugins.rspec")
-
-vim.api.nvim_set_var("rspec_command", "call VtrSendCommand('rspec {spec}')")
+require("daniel-enqz.plugins.rspecc")
