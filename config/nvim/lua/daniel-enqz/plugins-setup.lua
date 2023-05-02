@@ -113,6 +113,15 @@ return packer.startup(function(use)
 	-- rspec
 	use("thoughtbot/vim-rspec")
 
+	-- tab names
+	use({
+		"romgrk/barbar.nvim",
+		requires = {
+			"lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
+			"nvim-tree/nvim-web-devicons", -- OPTIONAL: for file icons
+		},
+	})
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
