@@ -4,14 +4,12 @@
 # Zsh configuration
 # -----------------
 
-
 # Import all shell partials
 source "$HOME/.dotfiles/shell/init.sh"
 # -----------------Import versions
 iruby
-# inode
+inode
 # ipython
-
 # Remove older command from the history if a duplicate is to be added.
 setopt HIST_IGNORE_ALL_DUPS
 

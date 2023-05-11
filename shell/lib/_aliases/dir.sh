@@ -1,6 +1,6 @@
 #!/bin/bash
 # Temporal
-alias cdcc="cd /Users/daniel-enqz/main/GitHubRepos/projects/Freelance/pgskl"
+alias cdcc="/Users/daniel-enqz/main/GitHubRepos/projects/Rails/ruby-corners-100"
 
 # Jumps
 alias op='open .'
