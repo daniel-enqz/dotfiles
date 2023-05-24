@@ -30,6 +30,17 @@ rails s -b 'ssl://localhost:3000?key=localhost-key.pem&cert=localhost.pem'
 # Open Rails Server
 ./bin/dev
 
+% Docker
+# List all containers
+docker ps -a
+
+# List all images
+docker images
+
+# Remove container
+docker rm <CONTAINER_ID>
+$ CONTAINER_ID: docker ps -a
+
 
 % Services
 # Start Postgres
