@@ -45,7 +45,7 @@ return packer.startup(function(use)
 	use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion) (Do: W + Y, W + R + Y)
 
 	-- commenting with gc
-	use("numToStr/Comment.nvim") -- (Do: GCC, G + C + 9 + J)
+	use("numToStr/Comment.nvim") -- (Do: gcc, g + c + 9 + j)
 
 	use("nvim-tree/nvim-tree.lua")
 
