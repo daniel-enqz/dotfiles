@@ -37,6 +37,14 @@ docker ps -a
 # List all images
 docker images
 
+# Start a rails server container
+docker run -p 5000:3000 <IMAGE_NAME>
+$ IMAGE_NAME: docker images | awk '{print $1}' | tail -n +2 | fzf
+
+# Delete specific image
+docker rmi <IMAGE_ID>
+$ IMAGE_ID: docker images | awk '{print $1 "\t" $2 "\t" $3}' | tail -n +2 | fzf | awk '{print $3}'
+
 # Remove container
 docker rm <CONTAINER_ID>
 $ CONTAINER_ID: docker ps -a
@@ -57,7 +65,4 @@ ipconfig getifaddr en0
 # Open credentials in vs code
 EDITOR="code --wait" rails credentials:edit
 
-# Start server with tmux
-tmux new-session -d -s web 'bin/rails server -p 3000'; echo "Server started"
-tmux new-session -d -s css 'bin/rails tailwindcss:watch'; echo "CSS started"
 

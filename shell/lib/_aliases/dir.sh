@@ -11,6 +11,9 @@ alias cdk='cd $HOME/main/Work/kublau'
 alias cdw='cd $HOME/main/Work/lewagon'
 alias cdd='cd $HOME/.dotfiles'
 
+# Docker
+alias d='docker'
+
 # Terminal
 alias c='clear'
 alias e='exit'

@@ -17,10 +17,11 @@ _reverse_search() {
 
 _git_branches() {
   local branches branch
-  branches=$(git branch -a --format='%(refname:short)') &&
+  branches=$(git branch -a --format='%(refname:short)' | awk -F'/' '{print $NF}') &&
   branch=$(echo "$branches" | fzf +s +m) &&
   git checkout "$(echo "$branch" | awk '{print $1}')"
 }
+
 
 zle      -N    _display_message
 bindkey  '^h'  _display_message
