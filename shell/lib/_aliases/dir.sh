@@ -13,6 +13,8 @@ alias cdd='cd $HOME/.dotfiles'
 
 # Docker
 alias d='docker'
+alias dc='docker-compose'
+alias dm='docker-machine'
 
 # Terminal
 alias c='clear'
