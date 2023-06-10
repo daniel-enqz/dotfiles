@@ -26,3 +26,11 @@ function inode {
 
   load_node
 }
+
+function iibrew {
+  fname=$(declare -f -F load_ibrew)
+
+  [ -n "$fname" ] || source "$DOTFILES_DIR/lazy/brew.sh"
+
+  load_ibrew
+}

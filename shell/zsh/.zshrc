@@ -7,9 +7,10 @@
 # Import all shell partials
 source "$HOME/.dotfiles/shell/init.sh"
 # -----------------Import versions
-iruby
+# iruby
 inode
 # ipython
+
 # Remove older command from the history if a duplicate is to be added.
 setopt HIST_IGNORE_ALL_DUPS
 
@@ -98,3 +99,5 @@ for key ('k') bindkey -M vicmd ${key} history-substring-search-up
 for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 # zprof
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
