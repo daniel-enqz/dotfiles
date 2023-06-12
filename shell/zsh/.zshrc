@@ -1,5 +1,5 @@
 # Measure Time
-# zmodload zsh/zprof
+zmodload zsh/zprof
 # -----------------
 # Zsh configuration
 # -----------------
@@ -8,7 +8,7 @@
 source "$HOME/.dotfiles/shell/init.sh"
 # -----------------Import versions
 # iruby
-inode
+# inode
 # ipython
 
 # Remove older command from the history if a duplicate is to be added.
@@ -98,6 +98,8 @@ for key ('^[[B' '^N' ${terminfo[kcud1]}) bindkey ${key} history-substring-search
 for key ('k') bindkey -M vicmd ${key} history-substring-search-up
 for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
-# zprof
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+
+zprof

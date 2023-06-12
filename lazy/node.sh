@@ -33,4 +33,5 @@ function load_node() {
   # So instead of running `bin/rails` like the doc says, just run `rails`
   # Same for `./node_modules/.bin` and nodejs
   export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
+  nvm use v12.22.12
 }
