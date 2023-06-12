@@ -7,7 +7,7 @@ alias op='open .'
 alias vs='code .'
 alias cdc='cd $HOME/main'
 alias cdcp='cd $HOME/main/GitHubRepos/projects'
-alias cdk='cd $HOME/main/Work/kublau'
+alias cdk='cd $HOME/main/Work/kublau/kublau'
 alias cdw='cd $HOME/main/Work/lewagon'
 alias cdd='cd $HOME/.dotfiles'
 
