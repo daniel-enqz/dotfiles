@@ -1,5 +1,5 @@
 # Measure Time
-zmodload zsh/zprof
+# zmodload zsh/zprof
 # -----------------
 # Zsh configuration
 # -----------------
@@ -102,4 +102,4 @@ unset key
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 
-zprof
+# zprof
