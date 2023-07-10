@@ -42,9 +42,17 @@ alias g='git'
 alias gis='git status'
 alias gl='git lg'
 alias gll='git lg --all'
+alias gf='git fetch'
+alias gcs="git log -E -i --grep"
 
 # Shell Scripts
 alias run_symbolic='sh $DOTFILES_DIR/startup/lib/link_files.sh'
 alias a="arch -x86_64"
 alias ibrew="arch -x86_64 brew"
+alias bsl="brew services list"
+alias bssa="brew services restart --all"
+alias bsi="brew services info"  
+
+
+
 

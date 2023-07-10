@@ -21,7 +21,4 @@ function ga {
   # Construct the commit message and commit the changes
   git commit -m "${type}<${scope}>${description}"
 
-  # Push the changes
-  git push
-
 }
