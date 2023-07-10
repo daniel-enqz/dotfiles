@@ -22,3 +22,8 @@ function ga {
   git commit -m "${type}<${scope}>${description}"
 
 }
+
+function gfcm {
+  # find a commit by its message
+  git log --all --grep="$1"
+}
