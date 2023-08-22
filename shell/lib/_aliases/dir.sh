@@ -1,12 +1,12 @@
 #!/bin/bash
 # Temporal
-alias cdcc="/Users/daniel-enqz/main/GitHubRepos/projects/Rails/ruby-corners-100"
+# alias cdcc="/Users/daniel-enqz/main/GitHubRepos/projects/Rails/ruby-corners-100"
 
 # Jumps
 alias op='open .'
 alias vs='code .'
 alias cdc='cd $HOME/main'
-alias cdcp='cd $HOME/main/GitHubRepos/projects'
+alias cds='cd $HOME/main/GitHubRepos/daniel-enqz/PROGRAMMING_COURSE💙'
 alias cdk='cd $HOME/main/Work/kublau/kublau'
 alias cdw='cd $HOME/main/Work/lewagon'
 alias cdd='cd $HOME/.dotfiles'
@@ -50,7 +50,7 @@ alias a="arch -x86_64"
 alias ibrew="arch -x86_64 brew"
 alias bsl="brew services list"
 alias bssa="brew services restart --all"
-alias bsi="brew services info"  
+alias bsi="brew services info"
 
 
 
