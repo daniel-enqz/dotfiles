@@ -122,6 +122,8 @@ return packer.startup(function(use)
 		},
 	})
 
+  use { "catppuccin/nvim", as = "catppuccin" }
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
