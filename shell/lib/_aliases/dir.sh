@@ -9,6 +9,7 @@ alias cdc='cd $HOME/main'
 alias cds='cd $HOME/main/GitHubRepos/daniel-enqz/PROGRAMMING_COURSE💙'
 alias cdk='cd $HOME/main/Work/kublau/kublau'
 alias cdw='cd $HOME/main/Work/lewagon'
+alias cdf='cd $HOME/main/Work/freelance'
 alias cdd='cd $HOME/.dotfiles'
 
 # Docker
