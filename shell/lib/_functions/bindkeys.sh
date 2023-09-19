@@ -19,7 +19,7 @@ _git_branches() {
   local branches branch
   branches=$(git branch -a --format='%(refname:short)' | awk -F'/' '{print $NF}') &&
   branch=$(echo "$branches" | fzf +s +m) &&
-  git checkout "$(echo "$branch" | awk '{print $1}')"
+  git checkout "$branch"
 }
 
 
