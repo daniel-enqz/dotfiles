@@ -9,4 +9,4 @@ cd fonts || exit
 rm -rf fonts
 
 # tmux plugin manager
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
