@@ -8,8 +8,7 @@
 ![Screenshot 2023-10-03 at 6 32 05 p m](https://github.com/daniel-enqz/dotfiles/assets/72522628/9e6dea4f-b1fc-41f1-b698-605910ea639b)
 
 
-# Installation in 10 steps
-### 🌱 First steps
+# Installation
 > 1. brew install --cask iterm2
 > 2. Check for zsh installation `zsh --version`
 > 3. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
