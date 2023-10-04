@@ -53,15 +53,9 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - Update your modules to their latest revisions: `zimfw update`
 - Upgrade zimfw to its latest version: `zimfw upgrade`
 
-### 🧞‍♂️ About our main installations, TMUX and NVIM!!! 
-
-![Screenshot 2023-03-17 at 17 47 39](https://user-images.githubusercontent.com/72522628/226070780-0eeee011-d598-49d6-9cc5-7631363d10c2.jpg)
-
-
-> **🪴 Important:** Be sure to install plugin manager `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.<br>
-> **🪴 Important:** Also you may need to run `Ctrl + A + Shift + I`(This will install any plugin defined in this file).
-
 ### TMUX Commands:
+`Ctrl + A + Shift + I`: This will install any plugin defined in `tmux.conf`
+
 **Navigation**
 - `Ctrl + A + S`: See all sessions.
 - `Ctrl + A + W`: See all windows.
