@@ -8,7 +8,15 @@
 ![Screenshot 2023-10-03 at 6 32 05 p m](https://github.com/daniel-enqz/dotfiles/assets/72522628/9e6dea4f-b1fc-41f1-b698-605910ea639b)
 
 > Themes: 
-`curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
+
+🥕 iTerm2
+`curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`
+`https://github.com/catppuccin/iterm`
+🥕 tmux
+https://github.com/catppuccin/tmux
+
+🥕 nvim
+https://github.com/catppuccin/nvim
 
 ### 🌱 First steps
 > 1. brew install --cask iterm2
