@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Ask before running
+read -p "Are you sure you want to start installation? (y/n) " -n 1 -r
+
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
 
 source "$TEMP_DOTFILES_DIR/startup/lib/link_files.sh"
