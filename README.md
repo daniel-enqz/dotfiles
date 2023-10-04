@@ -32,12 +32,13 @@ chsh -s $(which zsh)
 
 ## 🎉 You are all set!!! Check the following resources:
 
-> **🪴 Important:** If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`.
+🪴 If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`.
+
 > 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br>
 > 🐍 Pip for Python <br>
 > 🧼 npm for node packages <br>
 
-#### 🦦 About [ZIM](https://github.com/zimfw/zimfw#set-up-zshrc):
+🪴 About [ZIM](https://github.com/zimfw/zimfw#set-up-zshrc):
 
 - zimfw plugin manager installs modules at `~/.zim/modules`.
 - This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
