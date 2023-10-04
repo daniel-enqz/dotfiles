@@ -8,7 +8,7 @@
 ![Screenshot 2023-10-03 at 6 32 05 p m](https://github.com/daniel-enqz/dotfiles/assets/72522628/9e6dea4f-b1fc-41f1-b698-605910ea639b)
 
 
-# Installation
+# Installation in 10 steps
 ### 🌱 First steps
 > 1. brew install --cask iterm2
 > 2. Check for zsh installation `zsh --version`
@@ -19,13 +19,13 @@
 chsh -s $(which zsh)
 ````
 
-- Be sure that you have installed [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
+> 5. Install: [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
 
-> 5. `cd ~`
-> 6. `git clone git@github.com:daniel-enqz/dotfiles.git`
-> 7. `sh .dotfiles/startup/startup.sh`
-> 8. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
-> 9. Perform git auth: https://github.com/lewagon/setup/blob/master/macos.md#github-cli
+> 6. `cd ~`
+> 7. `git clone git@github.com:daniel-enqz/dotfiles.git`
+> 8. `sh .dotfiles/startup/startup.sh`
+> 9. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
+> 10. Perform git auth: https://github.com/lewagon/setup/blob/master/macos.md#github-cli
 
 
 🥕 *iTerm2 Themes*
