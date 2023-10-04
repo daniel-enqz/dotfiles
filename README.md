@@ -5,11 +5,7 @@
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#manual-installation), but if you follow this guide steps you will be all set up.
 
 ### Open 10 terminals in less than 1 second ⚡️⚡️⚡️
-![Screenshot 2023-10-03 at 6 30 30 p m](https://github.com/daniel-enqz/dotfiles/assets/72522628/da9536f3-9f31-458b-9a2c-9b9b2ff2765d)
-
-
-![Screenshot 2023-03-07 at 18 19 56](https://user-images.githubusercontent.com/72522628/223586414-25d14975-526d-46c8-ad36-1c3a67f4428e.jpg)
-
+![Screenshot 2023-10-03 at 6 32 05 p m](https://github.com/daniel-enqz/dotfiles/assets/72522628/9e6dea4f-b1fc-41f1-b698-605910ea639b)
 
 ### 🌱 First steps
 > 1. brew install --cask iterm2
