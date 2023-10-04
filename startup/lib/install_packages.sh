@@ -10,3 +10,4 @@ xargs -I_ npm install -g "_" < "$TEMP_DOTFILES_DIR/exports/npm/npm.txt"
 
 # RUBY GEMS
 gem install colored faker http pry-byebug rake rails rest-client rspec rubocop-performance sqlite3
+brew update && brew upgrade && zimfw update && zimfw upgrade

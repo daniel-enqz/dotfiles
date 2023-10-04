@@ -8,7 +8,7 @@
 source "$HOME/.dotfiles/shell/init.sh"
 # -----------------Import versions
 # iruby
-# inode
+inode
 # ipython
 
 # Remove older command from the history if a duplicate is to be added.
