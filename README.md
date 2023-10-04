@@ -34,11 +34,10 @@ chsh -s $(which zsh)
 
 ## 🎉 You are all set!!! Check the following resources:
 
-> In here, we are installing all dependencies and pacakges from:<br>
+> **🪴 Important:** If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`.
 > 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br>
 > 🐍 Pip for Python <br>
 > 🧼 npm for node packages <br>
-> **🪴 Important:** If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`, this file is inside exports.sh, file that is explained further in this documentation.
 
 #### 🦦 About [ZIM](https://github.com/zimfw/zimfw#set-up-zshrc):
 
