@@ -20,7 +20,6 @@ chsh -s $(which zsh)
 ````
 
 > 5. Install: [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
-
 > 6. `cd ~`
 > 7. `git clone git@github.com:daniel-enqz/dotfiles.git`
 > 8. `sh .dotfiles/startup/startup.sh`
