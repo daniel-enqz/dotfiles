@@ -22,7 +22,6 @@ chsh -s $(which zsh)
 > 5. Install: [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
 > 6. `cd ~ && git clone git@github.com:daniel-enqz/dotfiles.git`
 > 7. `sh .dotfiles/startup/startup.sh`
-> 8. Perform git auth: https://github.com/lewagon/setup/blob/master/macos.md#github-cli
 
 🥕 *iTerm2 Themes*
 - Coolnight: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`<br>
