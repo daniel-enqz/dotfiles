@@ -2,6 +2,19 @@
 
 TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
 
+# remove files from home directory first
+rm -rf "$HOME/.zshenv"
+rm -rf "$HOME/.hushlogin"
+rm -rf "$HOME/.zshrc"
+rm -rf "$HOME/.zprofile"
+rm -rf "$HOME/.zimrc"
+rm -rf "$HOME/.zim"
+rm -rf "$HOME/.gitconfig"
+rm -rf "$HOME/.tmux.conf"
+rm -rf "$HOME/.tmux"
+rm -rf "$HOME/.config"
+rm -rf "$HOME/.pryrc"
+
 ln -s "$TEMP_DOTFILES_DIR/shell/zsh/.zshenv" "$HOME/.zshenv"
 ln -s "$TEMP_DOTFILES_DIR/shell/zsh/.hushlogin" "$HOME/.hushlogin"
 ln -s "$TEMP_DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
