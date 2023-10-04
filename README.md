@@ -7,9 +7,11 @@
 ### Open 10 terminals in less than 1 second ⚡️⚡️⚡️
 ![Screenshot 2023-10-03 at 6 32 05 p m](https://github.com/daniel-enqz/dotfiles/assets/72522628/9e6dea4f-b1fc-41f1-b698-605910ea639b)
 
+> Themes: 
+`curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
+
 ### 🌱 First steps
 > 1. brew install --cask iterm2
-> 2. Theme: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
 > 1. Check for zsh installation `zsh --version`
 > 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
 > 3. Set Zsh as the default shell, if you haven't done so already:
