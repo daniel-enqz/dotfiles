@@ -17,11 +17,11 @@
 > 6. `cd ~ && git clone git@github.com:daniel-enqz/dotfiles.git`
 > 7. `sh .dotfiles/startup/startup.sh`
 
-🥕 *iTerm2 Themes*
+## 🎉 You are all set!!! Check the following resources:
+
+### 🪴 iTerm2 Themes
 - Coolnight: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`<br>
 - Catpuccin: `https://github.com/catppuccin/iterm`
-
-## 🎉 You are all set!!! Check the following resources:
 
 ### 🪴 If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`.
 
