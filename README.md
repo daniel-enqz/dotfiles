@@ -7,35 +7,28 @@
 ### Open 10 terminals in less than 1 second ⚡️⚡️⚡️
 ![Screenshot 2023-10-03 at 6 32 05 p m](https://github.com/daniel-enqz/dotfiles/assets/72522628/9e6dea4f-b1fc-41f1-b698-605910ea639b)
 
-> Themes: 
 
-🥕 iTerm2
-`curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`
-`https://github.com/catppuccin/iterm`
-🥕 tmux
-https://github.com/catppuccin/tmux
-
-🥕 nvim
-https://github.com/catppuccin/nvim
-
+# Installation
 ### 🌱 First steps
 > 1. brew install --cask iterm2
-> 1. Check for zsh installation `zsh --version`
-> 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
-> 3. Set Zsh as the default shell, if you haven't done so already:
+> 2. Check for zsh installation `zsh --version`
+> 3. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
+> 4. Set Zsh as the default shell, if you haven't done so already:
 
 ```zsh
 chsh -s $(which zsh)
 ````
 
-# Installation
 - Be sure that you have installed [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
 
-> 1. `cd ~`
-> 2. `git clone git@github.com:daniel-enqz/dotfiles.git`
-> 3. `sh .dotfiles/startup/startup.sh`
-> 4. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
-> 5. After all this commands you can consider installing your rbenv, node, python versions, [gems](https://github.com/lewagon/setup/blob/master/macos.md#ruby), *zim modules*, etc.
+> 5. `cd ~`
+> 6. `git clone git@github.com:daniel-enqz/dotfiles.git`
+> 7. `sh .dotfiles/startup/startup.sh`
+> 8. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
+
+🥕 iTerm2 Themes
+Coolnight: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`<br>
+Catpuccin: `https://github.com/catppuccin/iterm`
 
 ## 🎉 You are all set!!! Check the following resources:
 
