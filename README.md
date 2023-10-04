@@ -9,9 +9,9 @@
 ### This are the efficiency numbers that you can approximately achieve with this guide. <br> (Opens 10 terminals in less than 1 second) ⚡️⚡️⚡️
 ![Screenshot 2023-02-26 at 12 51 45](https://user-images.githubusercontent.com/72522628/221430646-8f050482-9824-482f-87f6-b9ade4c4710a.jpg)
 
-# Nice Terminal, Nice Theme:
+# Iterm2 Installation:
 > 1. brew install --cask iterm2
-> 2. `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
+> 2. Theme: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
 
 ![Screenshot 2023-03-07 at 18 19 56](https://user-images.githubusercontent.com/72522628/223586414-25d14975-526d-46c8-ad36-1c3a67f4428e.jpg)
 
