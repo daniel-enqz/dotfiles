@@ -13,12 +13,7 @@
 > 1. brew install --cask iterm2
 > 2. Check for zsh installation `zsh --version`
 > 3. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
-> 4. Set Zsh as the default shell, if you haven't done so already:
-
-```zsh
-chsh -s $(which zsh)
-````
-
+> 4. Set Zsh as the default shell, if you haven't done so already: `chsh -s $(which zsh)`
 > 5. Install: [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
 > 6. `cd ~ && git clone git@github.com:daniel-enqz/dotfiles.git`
 > 7. `sh .dotfiles/startup/startup.sh`
