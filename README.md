@@ -32,13 +32,13 @@ chsh -s $(which zsh)
 
 ## 🎉 You are all set!!! Check the following resources:
 
-🪴 If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`.
+### 🪴 If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`.
 
 > 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br>
 > 🐍 Pip for Python <br>
 > 🧼 npm for node packages <br>
 
-🪴 About [ZIM](https://github.com/zimfw/zimfw#set-up-zshrc):
+### 🪴 About ZIM:
 
 - zimfw plugin manager installs modules at `~/.zim/modules`.
 - This modules are installed but need to be initialized, so this creates a static script at `~/.zim/init.zsh`
@@ -46,15 +46,18 @@ chsh -s $(which zsh)
 
 So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to use, when you run `zimfw install`, it will download the modules and create a static script at `~/.zim/init.zsh` that will initialize the modules for you.
 
-#### More about our zimfw plugin manager:
-
+#### Installing zim Plugins:
 - Add new modules to `~/.zimrc`: `zimfw install`
 - Remove modules from `~/.zimrc`: `zimfw uninstall`
 - Update your modules to their latest revisions: `zimfw update`
 - Upgrade zimfw to its latest version: `zimfw upgrade`
 
-### TMUX Commands:
-`Ctrl + A + Shift + I`: This will install any plugin defined in `tmux.conf`
+### 🪴 About TMUX:
+
+**Plugin management**
+- `Ctrl + A + Shift + I`: This will install any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)` 
+- `Ctrl + A + Shift + U`: This will update any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)`
+- `Ctrl + A + R`: Reload Tmux config file.
 
 **Navigation**
 - `Ctrl + A + S`: See all sessions.
@@ -69,8 +72,3 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 - `Ctrl + A + |`: This will split the window horizontally (creating new panes).
 - `Ctrl + A + -`: This will split the window vertically (creating new panes)
 - `Ctrl + A + C`: This will create a new window.
-
-**Plugin management**
-- `Ctrl + A + Shift + I`: This will install any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)` 
-- `Ctrl + A + Shift + U`: This will update any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)`
-- `Ctrl + A + R`: Reload Tmux config file.
