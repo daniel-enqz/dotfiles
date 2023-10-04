@@ -25,6 +25,8 @@ chsh -s $(which zsh)
 > 6. `git clone git@github.com:daniel-enqz/dotfiles.git`
 > 7. `sh .dotfiles/startup/startup.sh`
 > 8. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
+> 9. Perform git auth: https://github.com/lewagon/setup/blob/master/macos.md#github-cli
+
 
 🥕 *iTerm2 Themes*
 - Coolnight: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`<br>
