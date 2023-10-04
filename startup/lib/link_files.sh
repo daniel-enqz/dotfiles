@@ -23,5 +23,6 @@ ln -s "$TEMP_DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$TEMP_DOTFILES_DIR/shell/zsh/.zim" "$HOME/.zim"
 ln -s "$TEMP_DOTFILES_DIR/config/git/.gitconfig" "$HOME/.gitconfig"
 ln -s "$TEMP_DOTFILES_DIR/config/tmux/.tmux.conf" "$HOME/.tmux.conf"
-ln -s "$TEMP_DOTFILES_DIR/config/nvim" "$HOME/.config"
+mkdir -p ~/.config
+ln -s "$TEMP_DOTFILES_DIR/config/nvim" "$HOME/.config/nvim"
 ln -s "$TEMP_DOTFILES_DIR/config/ruby/.pryrc" "$HOME/.pryrc"
