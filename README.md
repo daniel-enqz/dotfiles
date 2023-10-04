@@ -26,9 +26,9 @@ chsh -s $(which zsh)
 > 7. `sh .dotfiles/startup/startup.sh`
 > 8. Run `brew update && brew upgrade && zimfw update && zimfw upgrade`
 
-🥕 iTerm2 Themes
-Coolnight: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`<br>
-Catpuccin: `https://github.com/catppuccin/iterm`
+🥕 *iTerm2 Themes*
+- Coolnight: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`<br>
+- Catpuccin: `https://github.com/catppuccin/iterm`
 
 ## 🎉 You are all set!!! Check the following resources:
 
