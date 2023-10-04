@@ -4,17 +4,15 @@
 > I use Iterm2 with zsh shell, neovim editor and tmux.<br>
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#manual-installation), but if you follow this guide steps you will be all set up.
 
-### This are the efficiency numbers that you can approximately achieve with this guide. <br> (Opens 10 terminals in less than 1 second) ⚡️⚡️⚡️
+### Open 10 terminals in less than 1 second ⚡️⚡️⚡️
 ![Screenshot 2023-02-26 at 12 51 45](https://user-images.githubusercontent.com/72522628/221430646-8f050482-9824-482f-87f6-b9ade4c4710a.jpg)
-
-# Iterm2 Installation:
-> 1. brew install --cask iterm2
-> 2. Theme: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
 
 ![Screenshot 2023-03-07 at 18 19 56](https://user-images.githubusercontent.com/72522628/223586414-25d14975-526d-46c8-ad36-1c3a67f4428e.jpg)
 
 
-# First steps
+### 🌱 First steps
+> 1. brew install --cask iterm2
+> 2. Theme: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors` (Import this theme from iTerm2 settings)
 > 1. Check for zsh installation `zsh --version`
 > 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
 > 3. Set Zsh as the default shell, if you haven't done so already:
