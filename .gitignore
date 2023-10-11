@@ -1,3 +1,4 @@
 # Ignore .ssh
 +.ssh
 +.config
++/exports/pip/requirements.txt
