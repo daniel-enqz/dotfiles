@@ -65,4 +65,10 @@ ipconfig getifaddr en0
 # Open credentials in vs code
 EDITOR="code --wait" rails credentials:edit
 
+% Git
 
+# Apply a stash
+git stash list | fzf | sed 's/:.*//' | xargs -I % git stash apply %
+
+# Drop a stash
+git stash list | fzf | sed 's/:.*//' | xargs -I % git stash drop %
