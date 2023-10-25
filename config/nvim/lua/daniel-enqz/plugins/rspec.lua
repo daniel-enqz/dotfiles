@@ -3,5 +3,5 @@
 --	return
 -- end
 
-vim.api.nvim_set_var("rspec_command", "call VtrSendCommand('rspec {spec} --format documentation')")
+vim.api.nvim_set_var("rspec_command", "call VtrSendCommand('bundle exec rspec {spec} --format documentation')")
 -- rspec.setup()
