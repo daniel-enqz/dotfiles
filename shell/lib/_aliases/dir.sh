@@ -1,6 +1,6 @@
 #!/bin/bash
 # Temporal
-# alias cdcc="/Users/daniel-enqz/main/GitHubRepos/projects/Rails/ruby-corners-100"
+alias cdcc="cd $HOME/main/GitHubRepos/projects/rails/athena"
 
 # Jumps
 alias op='open .'
@@ -10,6 +10,7 @@ alias cds='cd $HOME/main/GitHubRepos/daniel-enqz/PROGRAMMING_COURSE💙'
 alias cdk='cd $HOME/main/Work/kublau/kublau'
 alias cdw='cd $HOME/main/Work/lewagon'
 alias cdf='cd $HOME/main/Work/freelance'
+alias cdp='cd $HOME/main/GitHubRepos/projects'
 alias cdd='cd $HOME/.dotfiles'
 
 # Docker
