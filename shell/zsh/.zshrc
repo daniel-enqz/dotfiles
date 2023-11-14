@@ -7,9 +7,6 @@
 # Import all shell partials
 source "$HOME/.dotfiles/shell/init.sh"
 # -----------------Import versions
-inode
-iruby
-# ipython
 
 # Remove older command from the history if a duplicate is to be added.
 setopt HIST_IGNORE_ALL_DUPS
@@ -101,5 +98,8 @@ unset key
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
+inode
+iruby
+# ipython
 
 # zprof
