@@ -5,6 +5,8 @@ alias cdcc="cd $HOME/main/GitHubRepos/projects/rails/athena"
 # Jumps
 alias op='open .'
 alias vs='code .'
+# to open cursor
+alias cursor='open /System/Applications/Cursor.app'
 alias cdc='cd $HOME/main'
 alias cds='cd $HOME/main/GitHubRepos/daniel-enqz/PROGRAMMING_COURSE💙'
 alias cdk='cd $HOME/main/Work/kublau/kublau'
