@@ -2,9 +2,3 @@
 +.ssh
 +.config
 +/exports/pip/requirements.txt
-+/config
-+/exports
-+/lazy
-+/doc
-+/shell
-+/startup
