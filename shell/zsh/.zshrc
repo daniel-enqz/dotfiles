@@ -98,7 +98,7 @@ unset key
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-inode
-iruby
+# inode
+# iruby
 # ipython
 # zprof

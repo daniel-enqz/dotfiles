@@ -3,13 +3,15 @@
 # ZIM MODULES
 zmodule environment
 zmodule input
+zmodule git-info
 zmodule termtitle
 zmodule utility
 zmodule prompt-pwd
 
 # PROMT
+zmodule git
 zmodule duration-info
-zmodule minimal
+zmodule bira
 
 # COMPLETITION
 zmodule zsh-users/zsh-completions --fpath src
