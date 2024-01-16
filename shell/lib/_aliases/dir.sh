@@ -41,7 +41,7 @@ alias tds='tmux detach -s'
 
 # Git
 alias g='git'
-alias gis='git status'
+alias gs='git status'
 alias gl='git lg'
 alias gll='git lg --all'
 alias gf='git fetch'
@@ -55,5 +55,4 @@ alias bssa="brew services restart --all"
 alias bsi="brew services info"
 
 # Rails
-alias rs='bin/setup'
-alias kb='boot'
+alias bt='boot'

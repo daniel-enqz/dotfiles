@@ -9,8 +9,6 @@ zmodule utility
 zmodule prompt-pwd
 
 # PROMT
-zmodule git
-zmodule duration-info
 zmodule bira
 
 # COMPLETITION
