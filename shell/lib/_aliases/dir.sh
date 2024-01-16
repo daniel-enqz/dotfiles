@@ -21,7 +21,7 @@ alias dm='docker-machine'
 # Terminal
 alias c='clear'
 alias e='exit'
-alias nv='nvim'
+alias lv='lvim'
 alias tmp='mkdir -p /tmp/ && cd /tmp/'
 
 # Search
