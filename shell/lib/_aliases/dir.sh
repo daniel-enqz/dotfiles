@@ -56,3 +56,4 @@ alias bsi="brew services info"
 
 # Rails
 alias rs='bin/setup'
+alias kb='boot'
