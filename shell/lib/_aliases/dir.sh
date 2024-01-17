@@ -40,11 +40,11 @@ alias tks='tmux kill-session -t'
 alias tds='tmux detach -s'
 
 # Git
-alias g='git'
 alias gs='git status'
 alias gl='git lg'
 alias gll='git lg --all'
 alias gf='git fetch'
+alias gb='git branch'
 
 # Packages
 alias run_symbolic='sh $DOTFILES_DIR/startup/lib/link_files.sh'
