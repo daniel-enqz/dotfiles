@@ -46,6 +46,7 @@ alias gf='git fetch'
 alias gb='git branch'
 alias gco='git checkout'
 alias gia='git add'
+alias gp='git push'
 
 # Packages
 alias run_symbolic='sh $DOTFILES_DIR/startup/lib/link_files.sh'
