@@ -16,7 +16,6 @@ alias cdd='cd $HOME/.dotfiles'
 # Docker
 alias d='docker'
 alias dc='docker-compose'
-alias dm='docker-machine'
 
 # Terminal
 alias c='clear'
@@ -45,6 +44,8 @@ alias gl='git lg'
 alias gll='git lg --all'
 alias gf='git fetch'
 alias gb='git branch'
+alias gco='git checkout'
+alias gia='git add'
 
 # Packages
 alias run_symbolic='sh $DOTFILES_DIR/startup/lib/link_files.sh'
