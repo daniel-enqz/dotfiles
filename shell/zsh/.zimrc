@@ -9,7 +9,7 @@ zmodule utility
 zmodule prompt-pwd
 
 # PROMT
-zmodule bira
+zmodule Ansimorph/oblong
 
 # COMPLETITION
 zmodule zsh-users/zsh-completions --fpath src
