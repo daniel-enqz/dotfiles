@@ -9,7 +9,7 @@ zmodule utility
 zmodule prompt-pwd
 
 # PROMT
-zmodule Ansimorph/oblong
+zmodule steeef
 
 # COMPLETITION
 zmodule zsh-users/zsh-completions --fpath src
