@@ -57,4 +57,4 @@ alias bssa="brew services restart --all"
 alias bsi="brew services info"
 
 # Rails
-alias bt='boot'
+alias bt='bin/boot'
