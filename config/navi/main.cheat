@@ -27,9 +27,6 @@ $ PID_5000: lsof -wni tcp:5000 | awk '{print $2}'
 # Sart server with mkcert
 rails s -b 'ssl://localhost:3000?key=localhost-key.pem&cert=localhost.pem'
 
-# Open Rails Server
-./bin/dev
-
 % Docker
 # List all containers
 docker ps -a

@@ -17,17 +17,19 @@ alias cdd='cd $HOME/.dotfiles'
 alias d='docker'
 alias dc='docker-compose'
 
-# Terminal
+# Shell
 alias c='clear'
 alias e='exit'
 alias lv='lvim'
 alias tmp='mkdir -p /tmp/ && cd /tmp/'
+alias nv='navi'
 
 # Search
 alias la='ls -la'
 
 # Info
 alias info='htop'
+alias ip='ipconfig getifaddr en0'
 
 # Tmux shortcuts
 alias tls='tmux ls'
