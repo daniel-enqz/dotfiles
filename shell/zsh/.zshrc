@@ -96,8 +96,7 @@ for key ('k') bindkey -M vicmd ${key} history-substring-search-up
 for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
 # inode
 # iruby
 # ipython

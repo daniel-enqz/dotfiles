@@ -5,12 +5,7 @@ alias cdcc='cd $HOME/main/GitHubRepos/projects/rails/kube'
 # Jumps
 alias op='open .'
 alias vs='code .'
-alias cdc='cd $HOME/main'
-alias cds='cd $HOME/main/GitHubRepos/daniel-enqz/PROGRAMMING_COURSE💙'
 alias cdk='cd $HOME/main/Work/kublau/kublau'
-alias cdw='cd $HOME/main/Work/lewagon'
-alias cdf='cd $HOME/main/Work/freelance'
-alias cdp='cd $HOME/main/GitHubRepos/projects'
 alias cdd='cd $HOME/.dotfiles'
 
 # Docker
@@ -21,7 +16,6 @@ alias dc='docker-compose'
 alias c='clear'
 alias e='exit'
 alias lv='lvim'
-alias tmp='mkdir -p /tmp/ && cd /tmp/'
 alias nv='navi'
 
 # Search
@@ -51,11 +45,8 @@ alias gia='git add'
 alias gp='git push'
 
 # Packages
-alias run_symbolic='sh $DOTFILES_DIR/startup/lib/link_files.sh'
-alias a="arch -x86_64"
-alias ibrew="arch -x86_64 brew"
-alias bsl="brew services list"
-alias bssa="brew services restart --all"
+# alias a="arch -x86_64"
+# alias ibrew="arch -x86_64 brew"
 alias bsi="brew services info"
 
 # Rails
