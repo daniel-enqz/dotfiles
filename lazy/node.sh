@@ -33,5 +33,5 @@ function load_node() {
   # So instead of running `bin/rails` like the doc says, just run `rails`
   # Same for `./node_modules/.bin` and nodejs
   export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
-  nvm use v20.11.0
+  nvm use v21.7.1
 }
