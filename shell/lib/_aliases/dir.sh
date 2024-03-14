@@ -45,7 +45,7 @@ alias gia='git add'
 alias gp='git push'
 
 # Packages
-alias a="arch -x86_64"
+alias a86="arch -x86_64"
 alias ibrew="arch -x86_64 brew"
 alias bsi="brew services info"
 
