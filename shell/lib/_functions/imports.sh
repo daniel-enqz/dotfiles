@@ -27,13 +27,6 @@ function inode {
   load_node
 }
 
-function web-setup-official {
-  iruby
-  inode
-  nvm use 16.19.1
-  source ~/.zshrc
-}
-
 function iibrew {
   fname=$(declare -f -F load_ibrew)
 
