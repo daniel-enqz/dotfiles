@@ -1,5 +1,5 @@
 #!/bin/bash
 
 function load_ibrew() {
- eval "$(/usr/local/bin/brew shellenv)"
+  eval "$(arch -x86_64 /usr/local/bin/brew shellenv)"
 }
