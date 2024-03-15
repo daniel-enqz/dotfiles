@@ -1,6 +1,6 @@
 #!/bin/bash
 # Temporal
-alias cdcc='cd $HOME/main/GitHubRepos/projects/rails/kube'
+alias cdcc='cd $HOME/main/projects/kube'
 
 # Jumps
 alias op='open .'

@@ -59,8 +59,8 @@ brew services restart redis
 ipconfig getifaddr en0
 
 % Rails
-# Open credentials in lvim
-EDITOR="lvim" rails credentials:edit
+# Open credentials in vscode
+EDITOR="code" rails credentials:edit
 
 % Git
 
