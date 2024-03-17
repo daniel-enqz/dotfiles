@@ -48,3 +48,5 @@ alias gas='ga --summary'
 
 # Rails
 alias bt='bin/boot'
+alias rdp='rails db:drop'
+alias rdc='rails db:create'
