@@ -93,6 +93,10 @@ function ga {
 
     local summary_message=$(generate_summary_message "$commit_messages")
     printf $summary_message
+    echo "Press Enter to copy the summary to clipboard or Ctrl+C to abort."
+    read
+    echo $summary_message | pbcopy
+    echo "Summary copied to clipboard! ✅"
   else
     echo "Invalid option. Use --commit for individual commits or --squash for a summary of all commits."
   fi
