@@ -97,7 +97,7 @@ function ga {
     echo "Press Enter to copy the summary message to the clipboard or Ctrl+C to cancel."
     read -r
 
-    printf "$summary_message" | xclip -selection clipboard
+    echo $summary_message | pbcopy
     echo "Summary message copied to clipboard."
   else
     echo "Invalid option. Use --commit for individual commits or --squash for a summary of all commits."
