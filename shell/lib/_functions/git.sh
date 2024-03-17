@@ -74,7 +74,10 @@ function ga {
       commit_message=$(generate_commit_message "$diff_data")
       commit_changes "$commit_message"
   elif [[ "$1" == "--squash" ]]; then
-      commit_messages=$(get_commit_messages_since_divergence)
+      local remote=${1:-origin} # Default to 'origin' but allows overriding
+      local default_branch=$(git remote show $remote | grep 'HEAD branch' | cut -d' ' -f5)
+      local base_branch=${2:-$default_branch} # Use detected default or provided base branch
+      commit_messages=$(get_commit_messages_since_divergence "$base_branch")
       if [ -z "$commit_messages" ]; then
           echo "No new commits to summarize."
           return
