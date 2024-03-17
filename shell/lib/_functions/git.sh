@@ -1,8 +1,4 @@
 function ga {
-  get_diff_data() {
-      git diff
-  }
-
   generate_commit_message() {
       local diff_data="$1"
       local json_diff_data=$(jq -aRs . <<< "$diff_data")
@@ -28,7 +24,6 @@ function ga {
 
       echo $response | jq -r '.choices[0].message.content'
   }
-
 
   generate_summary_message() {
       local commit_messages="$1"
@@ -71,7 +66,7 @@ function ga {
   }
 
   if [[ "$1" == "--commit" ]]; then
-      diff_data=$(get_diff_data)
+      diff_data=$(git diff)
       if [ -z "$diff_data" ]; then
           echo "No changes to commit."
           return
@@ -79,15 +74,6 @@ function ga {
       commit_message=$(generate_commit_message "$diff_data")
       commit_changes "$commit_message"
   elif [[ "$1" == "--squash" ]]; then
-      local base_branch="main"
-      local current_branch=$(git rev-parse --abbrev-ref HEAD)
-      printf "Current branch: $current_branch\n"
-      printf "Base branch: $base_branch\n"
-      if [ "$current_branch" == "$base_branch" ]; then
-          echo "You're on the base branch ($base_branch). Switch to a feature branch to use this command."
-          return
-      fi
-
       commit_messages=$(get_commit_messages_since_divergence)
       if [ -z "$commit_messages" ]; then
           echo "No new commits to summarize."
