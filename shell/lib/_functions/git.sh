@@ -92,7 +92,7 @@ function ga {
     fi
 
     local summary_message=$(generate_summary_message "$commit_messages")
-    echo "\"$summary_message\""
+    printf $summary_message
   else
     echo "Invalid option. Use --commit for individual commits or --squash for a summary of all commits."
   fi
