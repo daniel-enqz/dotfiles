@@ -5,7 +5,7 @@
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#manual-installation), but if you follow this guide steps you will be all set up.
 
 ### Open 10 terminals in less than 1 second ⚡️⚡️⚡️
-![Screenshot 2023-10-03 at 6 32 05 p m](https://github.com/daniel-enqz/dotfiles/assets/72522628/9e6dea4f-b1fc-41f1-b698-605910ea639b)
+<img width="1512" alt="Screenshot 2024-03-17 at 2 36 12 a m" src="https://github.com/daniel-enqz/dotfiles/assets/72522628/902f695c-d53a-4a46-9c9b-150f34c34a4e">
 
 
 # Installation
