@@ -98,6 +98,8 @@ unset key
 
 # . /opt/homebrew/opt/asdf/libexec/asdf.sh
 # inode
-iruby
+# iruby
 # ipython
 # zprof
+source /Users/daniel-enqz/main/projects/quick-commit-ai/main.sh
+export OPENAI_API_KEY=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
