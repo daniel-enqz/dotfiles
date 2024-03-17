@@ -5,16 +5,13 @@ function ga {
 
   generate_commit_message() {
       local diff_data="$1"
-      # Use jq to properly escape and encode the diff data as a JSON string
       local json_diff_data=$(jq -aRs . <<< "$diff_data")
-
-      # Prepare the data for sending as JSON, correctly incorporating json_diff_data
       local data_json=$(jq -cn --arg jsonDiffData "$json_diff_data" '{
         "model": "gpt-4-turbo-preview",
         "messages": [
           {
             "role": "system",
-            "content": "You are a commit message assistant. Your task is to generate a concise and informative commit message based on the provided git diff data."
+            "content": "You are a commit message assistant. Your task is to generate a concise and informative commit message based on the provided git diff data. Keep your commit inline and less than 50 characters."
           },
           {
             "role": "user",
@@ -23,14 +20,40 @@ function ga {
         ]
       }')
 
-      # Make the call to OpenAI's Chat API
       local response=$(curl -s \
         -H "Content-Type: application/json" \
         -H "Authorization: Bearer $OPENAI_API_KEY" \
         -d "$data_json" \
         "https://api.openai.com/v1/chat/completions")
 
-      # Extract the text from the response, ensuring to parse the correct field
+      print $response
+      echo $response | jq -r '.choices[0].message.content'
+  }
+
+
+  generate_summary_message() {
+      local commit_messages="$1"
+      local json_commit_messages=$(jq -aRs . <<< "$commit_messages")
+      local data_json=$(jq -cn --arg jsonCommitMessages "$json_commit_messages" '{
+        "model": "gpt-4-turbo-preview",
+        "messages": [
+          {
+            "role": "system",
+            "content": "You are a summary assistant. Your task is to generate a concise and informative summary based on the provided commit messages."
+          },
+          {
+            "role": "user",
+            "content": $jsonCommitMessages
+          }
+        ]
+      }')
+
+      local response=$(curl -s \
+        -H "Content-Type: application/json" \
+        -H "Authorization: Bearer $OPENAI_API_KEY" \
+        -d "$data_json" \
+        "https://api.openai.com/v1/chat/completions")
+
       echo $response | jq -r '.choices[0].message.content'
   }
 
@@ -43,17 +66,37 @@ function ga {
       git commit -m "$1"
   }
 
-  # Check if there are changes to commit
-  diff_data=$(get_diff_data)
-  if [ -z "$diff_data" ]; then
-      echo "No changes to commit."
-      return  # Exit the function early if no changes
-  fi
+  get_commit_messages_since_divergence() {
+      local base_branch=${2:-"main"}
+      git log $base_branch..HEAD --pretty=format:"%s"
+  }
 
   if [[ "$1" == "--commit" ]]; then
+      diff_data=$(get_diff_data)
+      if [ -z "$diff_data" ]; then
+          echo "No changes to commit."
+          return  # Exit the function early if no changes
+      fi
       commit_message=$(generate_commit_message "$diff_data")
       commit_changes "$commit_message"
+  elif [[ "$1" == "--squash" ]]; then
+      local base_branch="main"
+      local current_branch=$(git rev-parse --abbrev-ref HEAD)
+
+      if [ "$current_branch" == "$base_branch" ]; then
+          echo "You're on the base branch ($base_branch). Switch to a feature branch to use this command."
+          return
+      fi
+
+      commit_messages=$(get_commit_messages_since_divergence "$base_branch")
+      if [ -z "$commit_messages" ]; then
+          echo "No new commits to summarize."
+          return
+      fi
+
+      summary_message=$(generate_summary_message "$commit_messages")
+      echo "\"$summary_message\""
   else
-      echo "To commit these changes, run the script with the --commit flag."
+      echo "Invalid option. Use --commit for individual commits or --squash for a summary of all commits."
   fi
 }
