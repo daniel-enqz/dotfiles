@@ -25,6 +25,15 @@ function ga {
       echo $response | jq -r '.choices[0].message.content'
   }
 
+  commit_changes() {
+      echo "Ready to commit with the following message:"
+      echo "git commit -m \"$1\""
+      echo "Press Enter to proceed or Ctrl+C to abort."
+      read
+      git add .
+      git commit -m "$1"
+  }
+
   generate_summary_message() {
       local commit_messages="$1"
       local json_commit_messages=$(jq -aRs . <<< "$commit_messages")
@@ -49,15 +58,6 @@ function ga {
         "https://api.openai.com/v1/chat/completions")
 
       echo $response | jq -r '.choices[0].message.content'
-  }
-
-  commit_changes() {
-      echo "Ready to commit with the following message:"
-      echo "git commit -m \"$1\""
-      echo "Press Enter to proceed or Ctrl+C to abort."
-      read
-      git add .
-      git commit -m "$1"
   }
 
   get_commit_messages_since_divergence() {
