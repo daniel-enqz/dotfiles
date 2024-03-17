@@ -24,4 +24,4 @@ printf "\033[0;32m------------------------------------------------------\033[0m\
 printf "\033[1;32mInstallation complete! ✅\033[0m\n"
 printf "Please restart your terminal to see changes.\n"
 printf "\033[0;36mRun: Ctrl + shift + A + I to install TMUX plugins\033[0m\n"
-
+printf "\033[0;36mAlso you may want to have zimfw up to date\033[0m\n"
