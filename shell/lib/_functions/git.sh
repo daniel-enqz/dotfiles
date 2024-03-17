@@ -80,15 +80,7 @@ function ga {
       commit_message=$(generate_commit_message "$diff_data")
       commit_changes "$commit_message"
   elif [[ "$1" == "--squash" ]]; then
-      local base_branch="main"
-      local current_branch=$(git rev-parse --abbrev-ref HEAD)
-
-      if [ "$current_branch" == "$base_branch" ]; then
-          echo "You're on the base branch ($base_branch). Switch to a feature branch to use this command."
-          return
-      fi
-
-      commit_messages=$(get_commit_messages_since_divergence "$base_branch")
+      commit_messages=$(get_commit_messages_since_divergence)
       if [ -z "$commit_messages" ]; then
           echo "No new commits to summarize."
           return
