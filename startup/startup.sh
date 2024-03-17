@@ -8,5 +8,8 @@ then
     exit 1
 fi
 
+mv "$HOME/dotfiles" "$HOME/.dotfiles"
+
 DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
+source "$DOTFILES_DIR/startup/lib/install_dependencies.sh"
 source "$DOTFILES_DIR/startup/lib/link_files.sh"

@@ -10,10 +10,8 @@ rm -rf "$HOME/.zshrc"
 rm -rf "$HOME/.zprofile"
 rm -rf "$HOME/.gitconfig"
 rm -rf "$HOME/.config"
-
-# Install this manually
-# rm -rf "$HOME/.tmux.conf"
-# rm -rf "$HOME/.tmux"
+rm -rf "$HOME/.tmux.conf"
+rm -rf "$HOME/.tmux"
 
 ln -s "$DOTFILES_DIR/shell/zsh/.zimrc" "$HOME/.zimrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zshenv" "$HOME/.zshenv"
@@ -21,7 +19,5 @@ ln -s "$DOTFILES_DIR/shell/zsh/.hushlogin" "$HOME/.hushlogin"
 ln -s "$DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/config/git/.gitconfig" "$HOME/.gitconfig"
+ln -s "$DOTFILES_DIR/config/tmux/.tmux.conf" "$HOME/.tmux.conf"
 
-# Install this manually
-# ln -s "$DOTFILES_DIR/config/tmux/.tmux.conf" "$HOME/.tmux.conf"
-# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
