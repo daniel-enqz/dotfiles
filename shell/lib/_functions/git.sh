@@ -43,10 +43,15 @@ function ga {
       git commit -m "$1"
   }
 
+  # Check if there are changes to commit
   diff_data=$(get_diff_data)
-  commit_message=$(generate_commit_message "$diff_data")
+  if [ -z "$diff_data" ]; then
+      echo "No changes to commit."
+      return  # Exit the function early if no changes
+  fi
 
   if [[ "$1" == "--commit" ]]; then
+      commit_message=$(generate_commit_message "$diff_data")
       commit_changes "$commit_message"
   else
       echo "To commit these changes, run the script with the --commit flag."
