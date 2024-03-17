@@ -23,7 +23,6 @@ alias la='ls -la'
 
 # Info
 alias info='htop'
-alias ip='ipconfig getifaddr en0'
 
 # Tmux shortcuts
 alias tls='tmux ls'
@@ -43,11 +42,6 @@ alias gb='git branch'
 alias gco='git checkout'
 alias gia='git add'
 alias gp='git push'
-
-# Packages
-alias a86="arch -x86_64"
-alias ibrew="arch -x86_64 brew"
-alias bsi="brew services info"
 
 # Rails
 alias bt='bin/boot'

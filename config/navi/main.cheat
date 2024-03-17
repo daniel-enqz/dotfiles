@@ -1,10 +1,3 @@
-% Brew
-# Update brew
-brew update
-
-# Upgrade brew packages
-brew upgrade
-
 % Zim
 # Upgrade Zim
 zimfw upgrade
@@ -20,12 +13,6 @@ zimfw uninstall && zimfw install
 kill -9 <PID_3000>
 $ PID_3000: lsof -wni tcp:3000 | awk '{print $2}'
 
-# Kill Localhost 5000
-kill -9 <PID_5000>
-$ PID_5000: lsof -wni tcp:5000 | awk '{print $2}'
-
-# Sart server with mkcert
-rails s -b 'ssl://localhost:3000?key=localhost-key.pem&cert=localhost.pem'
 
 % Docker
 # List all containers
@@ -34,25 +21,12 @@ docker ps -a
 # List all images
 docker images
 
-# Start a rails server container
-docker run -p 5000:3000 <IMAGE_NAME>
-$ IMAGE_NAME: docker images | awk '{print $1}' | tail -n +2 | fzf
-
-# Delete specific image
 docker rmi <IMAGE_ID>
 $ IMAGE_ID: docker images | awk '{print $1 "\t" $2 "\t" $3}' | tail -n +2 | fzf | awk '{print $3}'
 
 # Remove container
 docker rm <CONTAINER_ID>
 $ CONTAINER_ID: docker ps -a
-
-
-% Services
-# Start Postgres
-brew services restart postgresql
-
-# Start Redis
-brew services restart redis
 
 % Network
 # Get IP Address

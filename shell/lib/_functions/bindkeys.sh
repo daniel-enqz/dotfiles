@@ -1,11 +1,6 @@
 #!/bin/bash
 
 # Functions
-# Remote Search Using FZF
-_display_message() {
-  dirtomove=$(find . -not -path '*/\.*' -type d -print | fzf)
-  cd "$dirtomove" || return
-}
 
 # Reverse Search Using FZF
 _reverse_search() {
@@ -23,8 +18,6 @@ _git_branches() {
 }
 
 
-zle      -N    _display_message
-bindkey  '^h'  _display_message
 zle      -N    _reverse_search
 bindkey  '^r'  _reverse_search
 zle      -N    _git_branches

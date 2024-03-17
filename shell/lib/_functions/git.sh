@@ -8,18 +8,15 @@ function ga {
   PS3="🍀 Select type: "
   select choice in "feat" "fix" "chore" "docs" "ref" "style" "test"
   do
-      type="$choice"
+      scope="$choice"
       break;
   done
-
-  echo "🌲 Scope:"
-  read -r scope
 
   echo "🧼 Description:"
   read -r description
 
   # Construct the commit message and commit the changes
-  git commit -m "${type}<${scope}>${description}"
+  git commit -m "<${scope}>${description}"
 
 }
 
