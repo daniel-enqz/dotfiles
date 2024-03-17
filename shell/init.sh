@@ -10,3 +10,7 @@ done
 for functionToSource in "$DOTFILES_DIR/shell/lib/_functions/"*; do
   source "$functionToSource"
 done
+
+for gitFunctionsToSource in "$DOTFILES_DIR/shell/lib/_functions/_git/"*; do
+  source "$gitFunctionsToSource"
+done
