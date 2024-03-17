@@ -8,3 +8,5 @@ brew install navi
 brew install neovim
 brew install tmux
 brew install make
+
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
