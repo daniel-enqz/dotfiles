@@ -17,8 +17,10 @@ _git_branches() {
   git checkout "$branch"
 }
 
+_bindkeys() {
+  bindkey  '^r'  _reverse_search
+  bindkey  '^b'  _git_branches
+}
 
-zle      -N    _reverse_search
-bindkey  '^r'  _reverse_search
-zle      -N    _git_branches
-bindkey  '^b'    _git_branches
+# Bindkeys
+_bindkeys

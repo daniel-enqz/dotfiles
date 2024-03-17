@@ -13,7 +13,6 @@ zimfw uninstall && zimfw install
 kill -9 <PID_3000>
 $ PID_3000: lsof -wni tcp:3000 | awk '{print $2}'
 
-
 % Docker
 # List all containers
 docker ps -a
@@ -37,7 +36,6 @@ ipconfig getifaddr en0
 EDITOR="lvim" rails credentials:edit
 
 % Git
-
 # Apply a stash
 git stash list | fzf | sed 's/:.*//' | xargs -I % git stash apply %
 
