@@ -74,7 +74,7 @@ function ga {
       diff_data=$(get_diff_data)
       if [ -z "$diff_data" ]; then
           echo "No changes to commit."
-          return  # Exit the function early if no changes
+          return
       fi
       commit_message=$(generate_commit_message "$diff_data")
       commit_changes "$commit_message"
