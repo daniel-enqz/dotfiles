@@ -101,3 +101,4 @@ unset key
 # iruby
 # ipython
 # zprof
+source /Users/daniel-enqz/main/projects/quick-commit-ai/main.sh

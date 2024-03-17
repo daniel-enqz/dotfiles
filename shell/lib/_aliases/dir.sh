@@ -5,7 +5,8 @@ alias cdcc='cd $HOME/main/projects/kube'
 # Jumps
 alias op='open .'
 alias vs='code .'
-alias cdk='cd $HOME/main/Work/kublau/kublau'
+alias cdk='cd $HOME/main/work/kublau/kublau'
+alias cdp='cd $HOME/main/projects'
 alias cdd='cd $HOME/.dotfiles'
 
 # Docker
