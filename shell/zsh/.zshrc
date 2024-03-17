@@ -102,3 +102,4 @@ unset key
 # ipython
 # zprof
 source /Users/daniel-enqz/main/projects/quick-commit-ai/main.sh
+source /Users/daniel-enqz/main/projects/quick-commit-ai/main.sh
