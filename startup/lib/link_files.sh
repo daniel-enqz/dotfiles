@@ -20,4 +20,6 @@ ln -s "$DOTFILES_DIR/shell/zsh/.zshrc" "$HOME/.zshrc"
 ln -s "$DOTFILES_DIR/shell/zsh/.zprofile" "$HOME/.zprofile"
 ln -s "$DOTFILES_DIR/config/git/.gitconfig" "$HOME/.gitconfig"
 ln -s "$DOTFILES_DIR/config/tmux/.tmux.conf" "$HOME/.tmux.conf"
+
+mkdir -p "$HOME/.config/lvim"
 ln -s "$DOTFILES_DIR/config/lvim/config.lua" "$HOME/.config/lvim/config.lua"

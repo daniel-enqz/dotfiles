@@ -1,5 +1,8 @@
 #!/bin/bash
 
+brew update
+brew upgrade
+
 brew install navi
 brew install neovim
 brew install tmux
