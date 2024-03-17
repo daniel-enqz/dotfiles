@@ -26,7 +26,6 @@ function ga {
         -d "$data_json" \
         "https://api.openai.com/v1/chat/completions")
 
-      print $response
       echo $response | jq -r '.choices[0].message.content'
   }
 
