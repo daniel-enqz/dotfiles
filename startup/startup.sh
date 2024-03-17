@@ -13,3 +13,6 @@ mv "$HOME/dotfiles" "$HOME/.dotfiles"
 DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
 source "$DOTFILES_DIR/startup/lib/install_dependencies.sh"
 source "$DOTFILES_DIR/startup/lib/link_files.sh"
+
+# Extra TMUX setup
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
