@@ -1,7 +1,7 @@
 # Startup
 [![CI](https://github.com/daniel-enqz/dotfiles/actions/workflows/main.yaml/badge.svg)](https://github.com/daniel-enqz/dotfiles/actions/workflows/main.yaml)
 
-> I use Iterm2 with zsh shell, neovim editor and tmux.<br>
+> I use MacOS Terminal with zsh shell, lvim editor and tmux.<br>
 > We will be using zim, a super fast framework with useful modules and themes without compromising speed. You can check documentation [here](https://github.com/zimfw/zimfw#manual-installation), but if you follow this guide steps you will be all set up.
 
 ### Open 10 terminals in less than 1 second ⚡️⚡️⚡️
@@ -9,25 +9,13 @@
 
 
 # Installation
-> 1. brew install --cask iterm2
-> 2. Check for zsh installation `zsh --version`
-> 3. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
-> 4. Set Zsh as the default shell, if you haven't done so already: `chsh -s $(which zsh)`
-> 5. Install: [brew](https://github.com/lewagon/setup/blob/master/macos.md#homebrew), [python](https://github.com/lewagon/data-setup/blob/master/macOS.md#installing-python-with-pyenv), [node](https://github.com/lewagon/setup/blob/master/macos.md#nodejs), [yarn](https://github.com/lewagon/setup/blob/master/macos.md#yarn) and [PostgreSQL](https://github.com/lewagon/setup/blob/master/macos.md#postgresql).
-> 6. `cd ~ && git clone git@github.com:daniel-enqz/dotfiles.git`
-> 7. `sh .dotfiles/startup/startup.sh`
+> 1. Check for zsh installation `zsh --version`
+> 2. Uninstall any other framework you may have installed (Ex. `uninstall_oh_my_zsh`)
+> 3. Set Zsh as the default shell, if you haven't done so already: `chsh -s $(which zsh)`
+> 5. `cd ~ && git clone git@github.com:daniel-enqz/dotfiles.git`
+> 4. `sh .dotfiles/startup/startup.sh`
 
 ## 🎉 You are all set!!! Check the following resources:
-
-### 🪴 iTerm2 Themes
-- Coolnight: `curl https://raw.githubusercontent.com/josean-dev/dev-environment-files/main/coolnight.itermcolors --output ~/Downloads/coolnight.itermcolors`<br>
-- Catpuccin: `https://github.com/catppuccin/iterm`
-
-### 🪴 If you ever want to include all your current dependencies in this 3 files, you can run `export_packages`.
-
-> 🍺 Brewfile: _(Cool packages such as: git, tmux, fzf, tldr, rbenv, navi, redis, wget)_ <br>
-> 🐍 Pip for Python <br>
-> 🧼 npm for node packages <br>
 
 ### 🪴 About ZIM:
 
