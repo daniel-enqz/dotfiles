@@ -8,5 +8,5 @@ then
     exit 1
 fi
 
-TEMP_DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
-source "$TEMP_DOTFILES_DIR/startup/lib/link_files.sh"
+DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
+source "$DOTFILES_DIR/startup/lib/link_files.sh"
