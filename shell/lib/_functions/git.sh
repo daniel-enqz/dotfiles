@@ -45,7 +45,7 @@ function ga {
       "messages": [
         {
           "role": "system",
-          "content": "You are a summary assistant. Your task is to generate a concise and informative summary based on the provided commit messages."
+          "content": "You are a summary assistant. Your task is to generate a concise and informative summary based on the provided commit messages. More than just a list of commit messages, your summary should provide context and a high-level overview of the changes. Explaining the importance of the changes and how they fit into the project is also helpful. Keep your summary inline and less than 100 characters."
         },
         {
           "role": "user",
