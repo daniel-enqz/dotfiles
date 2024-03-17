@@ -45,7 +45,7 @@ function ga {
       "messages": [
         {
           "role": "system",
-          "content": "You are a summary assistant. Your task is to generate a concise and informative summary based on the provided commit messages. More than just a list of commit messages, your summary should provide context and a high-level overview of the changes. Explaining the importance of the changes and how they fit into the project is also helpful. Keep your summary inline and less than 100 characters."
+          "content": "You are a summary assistant. Your task is to generate a concise and informative summary based on the provided commit messages. More than just a list of commit messages, your summary should provide context and a high-level overview of the changes. Explaining the importance of the changes and how they fit into the project is also helpful. Keep your summary inline and less than 300 characters."
         },
         {
           "role": "user",
@@ -78,6 +78,7 @@ function ga {
     fi
     local commit_message=$(generate_commit_message "$diff_data")
     commit_changes "$commit_message"
+    echo "Changes committed. ✅"
   elif [[ "$1" == "--squash" ]]; then
     local remote=origin
     local default_branch=$(git remote show $remote | grep 'HEAD branch' | cut -d' ' -f5)
@@ -98,7 +99,7 @@ function ga {
     read -r
 
     echo $summary_message | pbcopy
-    echo "Summary message copied to clipboard."
+    echo "Summary message copied to clipboard. ✅"
   else
     echo "Invalid option. Use --commit for individual commits or --squash for a summary of all commits."
   fi

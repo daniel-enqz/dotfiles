@@ -42,6 +42,8 @@ alias gb='git branch'
 alias gco='git checkout'
 alias gia='git add'
 alias gp='git push'
+alias gac='ga --commit'
+alias gas='ga --squash'
 
 # Rails
 alias bt='bin/boot'
