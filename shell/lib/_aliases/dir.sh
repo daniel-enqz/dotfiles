@@ -1,10 +1,9 @@
 #!/bin/bash
-# Temporal
-alias cdcc='cd $HOME/main/projects/kube'
 
 # Jumps
 alias op='open .'
 alias vs='code .'
+alias cdc='cd $HOME/main'
 alias cdk='cd $HOME/main/work/kublau/kublau'
 alias cdp='cd $HOME/main/projects'
 alias cdd='cd $HOME/.dotfiles'
