@@ -46,5 +46,5 @@ alias gac='ga --commit'
 alias gas='ga --summary'
 
 # Rails
-alias bt='bin/boot'
+alias bt='bin/dev'
 
