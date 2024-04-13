@@ -13,19 +13,9 @@ zimfw uninstall && zimfw install
 kill -9 <PID_3000>
 $ PID_3000: lsof -wni tcp:3000 | awk '{print $2}'
 
-% Docker
-# List all containers
-docker ps -a
-
-# List all images
-docker images
-
-docker rmi <IMAGE_ID>
-$ IMAGE_ID: docker images | awk '{print $1 "\t" $2 "\t" $3}' | tail -n +2 | fzf | awk '{print $3}'
-
-# Remove container
-docker rm <CONTAINER_ID>
-$ CONTAINER_ID: docker ps -a
+# Remove postgres pid
+rm /opt/homebrew/var/postgresql@15/postmaster.pid
+brew services restart postgresql@15
 
 % Network
 # Get IP Address
