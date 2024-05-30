@@ -4,7 +4,7 @@
 alias op='open .'
 alias vs='code .'
 alias cdc='cd $HOME/main'
-alias cdk='cd $HOME/main/work/kublau/kublau'
+alias cdk='cd $HOME/main/projects/personal/kublau/kublau'
 alias cdp='cd $HOME/main/projects'
 alias cdd='cd $HOME/.dotfiles'
 
