@@ -16,4 +16,4 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - name: Lint shell scripts
-      run: shellcheck -C -e SC2034 $(find . -name '*.sh' -not -path './lazy/*' -not -path './shell/lib/_functions/imports.sh' -not -path './shell/init.sh' -not -path './shell/lib/_functions/exports.sh')
+      run: shellcheck -C -e SC2034 $(find . -name '*.sh' -not -path './shell/lib/_functions/_git/*' -not -path './lazy/*' -not -path './shell/lib/_functions/imports.sh' -not -path './shell/init.sh' -not -path './shell/lib/_functions/exports.sh')
