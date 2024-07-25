@@ -32,6 +32,7 @@ alias tnds='tmux new-session -d -s'
 alias tas='tmux attach -t'
 alias tks='tmux kill-session -t'
 alias tds='tmux detach -s'
+alias mts='manage_tmux_session'
 
 # Git
 alias gs='git status'

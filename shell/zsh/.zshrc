@@ -96,6 +96,7 @@ for key ('k') bindkey -M vicmd ${key} history-substring-search-up
 for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 
+manage_tmux_session
 # . /opt/homebrew/opt/asdf/libexec/asdf.sh
 # inode
 # iruby
