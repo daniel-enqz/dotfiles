@@ -1,4 +1,5 @@
-  # Function to generate a commit message based on git diff
+  #!/bin/bash
+
   generate_commit_message() {
     local diff_data="$1"
     local json_diff_data=$(jq -aRs . <<< "$diff_data")
