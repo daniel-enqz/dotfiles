@@ -45,6 +45,7 @@ alias gia='git add'
 alias gp='git push'
 alias gac='ga --commit'
 alias gas='ga --summary'
+alias gcp='git cherry-pick'
 
 # Rails
 alias bt='bin/dev'
