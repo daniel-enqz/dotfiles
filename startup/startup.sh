@@ -8,7 +8,7 @@ then
 fi
 
 mv "$HOME/dotfiles" "$HOME/.dotfiles"
-DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
+DOTFILES_DIR=/Users/daniel.enriquez/.dotfiles
 
 printf "\033[0;36mInstalling Dependencies 🐦‍🔥\033[0m\n"
 source "$DOTFILES_DIR/startup/lib/install_dependencies.sh"

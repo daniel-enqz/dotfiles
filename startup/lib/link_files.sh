@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES_DIR=/Users/daniel-enqz/.dotfiles
+DOTFILES_DIR=/Users/daniel.enriquez/.dotfiles
 
 # remove files from home directory first
 rm -rf "$HOME/.zimrc"
