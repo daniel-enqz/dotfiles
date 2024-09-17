@@ -5,3 +5,30 @@ export DOTFILES_DIR=/Users/daniel.enriquez/.dotfiles
 export EDITOR='lvim'
 export OPENAI_API_KEY="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"
 
+# {mark} Homebrew PATH
+export PATH="/opt/homebrew/bin:$PATH"
+
+# {mark} START IT-ENG JAMF SETUP ZSHRC
+source $HOME/.nurc
+export GOPATH="${NU_HOME}/go"
+export PATH="$GOPATH/bin:${PATH}"
+export MONOREPO_ROOT="$NU_HOME/mini-meta-repo"
+export PATH="$PATH:$MONOREPO_ROOT/monocli/bin"
+eval "$(rbenv init -)"
+# {mark} END IT-ENG JAMF SETUP ZSHRC
+
+# {mark} START IT-ENG NVM SETUP
+export NVM_DIR="/Users/daniel.enriquez/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && source "/usr/local/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+# {mark} START IT-ENG JAMF SETUP MOBILE ZSHRC
+export MONOREPO_ROOT="$NU_HOME/mini-meta-repo"
+export PATH="$PATH:$MONOREPO_ROOT/monocli/bin"
+export FLUTTER_SDK_HOME="$HOME/sdk-flutter"
+export FLUTTER_ROOT="$FLUTTER_SDK_HOME"
+export PATH="$PATH:$FLUTTER_SDK_HOME/bin:$NU_HOME/.pub-cache/bin:$FLUTTER_ROOT/bin/cache/dart-sdk/bin"
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export ANDROID_SDK="$ANDROID_HOME"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator"
+# {mark} END IT-ENG JAMF SETUP MOBILE ZSHRC
