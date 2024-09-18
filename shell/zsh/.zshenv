@@ -8,6 +8,9 @@ export OPENAI_API_KEY="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"
 # {mark} Homebrew PATH
 export PATH="/opt/homebrew/bin:$PATH"
 
+# IntelliJ IDEA CE PATH
+export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
+
 # {mark} START IT-ENG JAMF SETUP ZSHRC
 source $HOME/.nurc
 export GOPATH="${NU_HOME}/go"
