@@ -59,9 +59,6 @@
 [push]
 	default = simple
 
-[commit]
-  gpgsign = true
-
 [branch "master"]
   mergeoptions = --no-edit
 
