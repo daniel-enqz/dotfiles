@@ -1,7 +1,7 @@
 [user]
 	email = daniel.enm17@gmail.com
 	name = Daniel Enriquez
-	signingkey = A88A91671C974AF8
+	signingkey = 24D17DF5398DEA0F
 
 [color]
   branch = auto
@@ -58,6 +58,9 @@
 
 [push]
 	default = simple
+
+[commit]
+  gpgsign = true
 
 [branch "master"]
   mergeoptions = --no-edit
