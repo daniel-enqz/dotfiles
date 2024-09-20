@@ -8,6 +8,10 @@ export OPENAI_API_KEY="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"
 # {mark} Homebrew PATH
 export PATH="/opt/homebrew/bin:$PATH"
 
+# GPU
+export GPG_TTY=$(tty)
+export PINENTRY_USER_DATA="USE_CURSES=1"
+
 # IntelliJ IDEA CE PATH
 export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
 
