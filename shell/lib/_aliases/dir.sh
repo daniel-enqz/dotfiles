@@ -41,6 +41,8 @@ alias gll='git lg --all'
 alias gf='git fetch'
 alias gb='git branch'
 alias gco='git checkout'
+
+
 alias gia='git add'
 alias gp='git push'
 alias gac='ga --commit'
