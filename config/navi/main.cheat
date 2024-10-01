@@ -25,6 +25,10 @@ ipconfig getifaddr en0
 # Open credentials in lvim
 EDITOR="lvim" rails credentials:edit
 
+% Nubank
+# Refresh Credentials
+nu aws shared-role-credentials refresh -i && nu codeartifact login maven
+
 % Git
 # Apply a stash
 git stash list | fzf | sed 's/:.*//' | xargs -I % git stash apply %
