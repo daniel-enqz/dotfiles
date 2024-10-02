@@ -26,6 +26,9 @@ ipconfig getifaddr en0
 EDITOR="lvim" rails credentials:edit
 
 % Nubank
+# Login to Maven
+nu codeartifact login maven
+
 # Refresh Credentials and Login to Maven
 nu aws shared-role-credentials refresh -i && nu codeartifact login maven
 
