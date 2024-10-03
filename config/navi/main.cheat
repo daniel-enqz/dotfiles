@@ -26,14 +26,17 @@ ipconfig getifaddr en0
 EDITOR="lvim" rails credentials:edit
 
 % Nubank
+# Check Polices
+selected_account=$(printf "br\nbr-staging\nmx\nist" | fzf --prompt="Select an account: ") && nu sec shared-role-iam show daniel.enriquez --target-aws-account=$selected_account
+
 # Login to Maven
 nu codeartifact login maven
 
 # Refresh Credentials and Login to Maven
 nu aws shared-role-credentials refresh -i && nu codeartifact login maven
 
-# Quick Refresh Credentials
-nu aws shared-role-credentials refresh --account-alias br --keep-policies casual-dev,eng,prod-eng
+# Create Staging User
+nu-br-staging ser curl POST global factorio /api/customers/with-savings-account --env staging | jq
 
 % Git
 # Apply a stash
