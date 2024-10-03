@@ -32,8 +32,14 @@ selected_account=$(printf "br\nbr-staging\nmx\nist" | fzf --prompt="Select an ac
 # Login to Maven
 nu codeartifact login maven
 
-# Refresh Credentials and Login to Maven
+# Refresh AWS Credentials and Login to Maven
 nu aws shared-role-credentials refresh -i && nu codeartifact login maven
+
+# Refresh Staging Auth
+nu-br-staging auth get-refresh-token --env staging
+
+# Refresh IST Auth
+nu-ist auth get-refresh-token --env prod
 
 # Create Staging User
 nu-br-staging ser curl POST global factorio /api/customers/with-savings-account --env staging | jq
