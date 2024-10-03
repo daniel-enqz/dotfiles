@@ -97,3 +97,4 @@ for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 
 manage_tmux_session
+

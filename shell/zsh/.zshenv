@@ -39,3 +39,4 @@ export ANDROID_HOME="$HOME/Library/Android/sdk"
 export ANDROID_SDK="$ANDROID_HOME"
 export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator"
 # {mark} END IT-ENG JAMF SETUP MOBILE ZSHRC
+
