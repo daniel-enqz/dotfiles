@@ -4,7 +4,7 @@
 alias op='open .'
 alias vs='code .'
 alias cdc='cd $HOME/main'
-alias cdnu='cd $HOME/main/nubank'
+alias cdw='cd $HOME/main/nubank'
 alias cdp='cd $HOME/main/projects'
 alias cdd='cd $HOME/.dotfiles'
 
@@ -41,13 +41,16 @@ alias gll='git lg --all'
 alias gf='git fetch'
 alias gb='git branch'
 alias gco='git checkout'
-
-
 alias gia='git add'
 alias gp='git push'
 alias gac='ga --commit'
 alias gas='ga --summary'
 alias gcp='git cherry-pick'
+
+# Nubank
+alias cdnucer="cd $NU_HOME/.nu/certificates"
+alias cdnutok="cd $NU_HOME/.nu/tokens"
+alias cdnu="cd $NU_HOME"
 
 # Rails
 alias bt='bin/dev'
