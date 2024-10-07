@@ -10,6 +10,7 @@
   status = auto
   ui = auto
 
+
 [color "branch"]
   current = green
   remote = yellow
