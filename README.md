@@ -36,6 +36,8 @@ So in a nutshell, you can think of `~/.zimrc` as a list of modules you want to u
 **Plugin management**
 - `Ctrl + A + Shift + I`: This will install any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)` 
 - `Ctrl + A + Shift + U`: This will update any plugin defined in this file. `(/.dotfiles/config/tmux/.tmux.conf)`
+- `Ctrl + A + alt + U`: Uninstall plugin from this file. `(/.dotfiles/config/tmux/.tmux.conf)`
+remove/uninstall plugins not on the plugin list
 - `Ctrl + A + R`: Reload Tmux config file.
 
 **Navigation**
