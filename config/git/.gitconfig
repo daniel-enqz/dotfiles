@@ -17,7 +17,7 @@
 
 [core]
   pager = less -FRSX
-	editor = code --wait
+	editor = lvim
 	excludesfile = /Users/daniel-enqz/.gitignore
 
 [alias]
