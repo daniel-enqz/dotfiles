@@ -32,6 +32,9 @@ selected_account=$(printf "br\nbr-staging\nmx\nist" | fzf --prompt="Select an ac
 # Login to Maven
 nu codeartifact login maven
 
+# Refresh Credentials
+nu aws credentials refrsh
+
 # Refresh AWS Credentials and Login to Maven
 nu aws shared-role-credentials refresh -i && nu codeartifact login maven
 
