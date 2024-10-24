@@ -32,23 +32,26 @@ selected_account=$(printf "br\nbr-staging\nmx\nist" | fzf --prompt="Select an ac
 # Check Certs
 nu certs check
 
+# Check Assigned Scopes
+selected_account=$(printf "br\nbr-staging\nmx\nist" | fzf --prompt="Select an account: ") && nu-$selected_account sec scope show --env prod
+
 # Certs Setup
 nu certs setup --env=prod
 
 # Credentials Setup
 nu aws credentials setup
 
-# Check Access
-nu-mx cx diagnostics shuffle access-check user -v
-
 # Refresh AWS Credentials
 nu aws credentials refresh
+
+# Check Access
+nu-mx cx diagnostics shuffle access-check user -v
 
 # Refresh AWS Credentials and Login to Maven
 nu aws shared-role-credentials refresh -i && nu codeartifact login maven
 
 # Refresh Prod Auth (others are: staging, ist)
-nu-br auth get-access-token --env=prod && nu-br auth get-access-token --env=prod
+nu-br auth get-refresh-token --env=prod && nu-br auth get-access-token --env=prod
 
 # Create Staging User
 nu-br-staging ser curl POST global factorio /api/customers/with-savings-account --env staging | jq
