@@ -29,11 +29,11 @@ EDITOR="lvim" rails credentials:edit
 # Check Polices
 selected_account=$(printf "br\nbr-staging\nmx\nist" | fzf --prompt="Select an account: ") && nu sec shared-role-iam show daniel.enriquez --target-aws-account=$selected_account
 
-# Check Certs
-nu certs check
-
 # Check Assigned Scopes
 selected_account=$(printf "br\nbr-staging\nmx\nist" | fzf --prompt="Select an account: ") && nu-$selected_account sec scope show --env prod
+
+# Check Certs
+nu certs check
 
 # Certs Setup
 nu certs setup --env=prod
