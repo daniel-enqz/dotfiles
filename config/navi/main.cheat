@@ -32,6 +32,15 @@ selected_account=$(printf "br\nbr-staging\nmx\nist" | fzf --prompt="Select an ac
 # Check Certs
 nu certs check
 
+# Certs Setup
+nu certs setup --env=prod
+
+# Credentials Setup
+nu aws credentials setup
+
+# Check Access
+nu-mx cx diagnostics shuffle access-check user -v
+
 # Refresh AWS Credentials
 nu aws credentials refresh
 
