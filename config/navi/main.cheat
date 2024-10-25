@@ -41,7 +41,7 @@ nu certs setup --env=prod
 # Credentials Setup
 nu aws credentials setup
 
-# Refresh AWS Credentials
+# Refresh AWS Credentials (specify with: nu-mx)
 nu aws credentials refresh
 
 # Check Access
