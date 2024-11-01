@@ -56,6 +56,9 @@ nu-br auth get-refresh-token --env=prod && nu-br auth get-access-token --env=pro
 # Create Staging User
 nu-br-staging ser curl POST global factorio /api/customers/with-savings-account --env staging | jq
 
+# Make Requests
+nu-br ser curl GET s2 blackleach "/api/customers/59e9e760-7277-46f3-8f19-0cbfbe175e6c/barcode/26090236491520163769948200000007698930000002000/payment-method/credit-card/eligibility"
+
 % Git
 # Apply a stash
 git stash list | fzf | sed 's/:.*//' | xargs -I % git stash apply %
