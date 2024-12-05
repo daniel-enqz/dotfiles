@@ -17,6 +17,7 @@ alias c='clear'
 alias e='exit'
 alias lv='lvim'
 alias nv='navi'
+alias lg='lazygit'
 
 # Search
 alias la='ls -la'
