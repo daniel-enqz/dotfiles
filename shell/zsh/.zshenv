@@ -41,3 +41,4 @@ export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME:$ANDROID
 export FLUTTER_PLATFORM_CLIENT_ENV="staging"
 # {mark} END IT-ENG JAMF SETUP MOBILE ZSHRC
 
+. "$HOME/.cargo/env"

@@ -50,6 +50,9 @@ nu-mx cx diagnostics shuffle access-check user -v
 # Refresh AWS Credentials and Login to Maven
 nu aws shared-role-credentials refresh -i && nu codeartifact login maven
 
+# Refresh BR credentials
+nu aws shared-role-credentials refresh --account-alias br && nu codeartifact login maven
+
 # Refresh Prod Auth (others are: staging, ist)
 nu-br auth get-refresh-token --env=prod && nu-br auth get-access-token --env=prod
 
