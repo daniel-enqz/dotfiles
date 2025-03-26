@@ -54,7 +54,7 @@ gp() {
       echo "$suggested_cmd"
     else
       # If successful or other error, just output the result
-      echo "$output"
+      git push
     fi
 }
 
