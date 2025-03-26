@@ -45,22 +45,16 @@ function ga {
 # Git push with clipboard fallback for no upstream branch
 gp() {
     output=$(git push 2>&1)
+    
     if [[ $output == *"has no upstream branch"* ]]; then
-        # Extract the suggested command from the error message
-        suggested_cmd=$(echo "$output" | grep -o "git push --set-upstream origin [^ ]*")
-        
-        # Copy the command to clipboard based on OS
-        if [[ "$OSTYPE" == "darwin"* ]]; then
-            echo "$suggested_cmd" | pbcopy
-            echo "No upstream branch. Command copied to clipboard:"
-            echo "$suggested_cmd"
-        else
-            echo "No upstream branch. Please run:"
-            echo "$suggested_cmd"
-        fi
+      suggested_cmd=$(echo "$output" | grep -o "git push --set-upstream origin [^ ]*")
+      
+      echo "$suggested_cmd" | pbcopy
+      echo "No upstream branch. Command copied to clipboard:"
+      echo "$suggested_cmd"
     else
-        # If successful or other error, just output the result
-        echo "$output"
+      # If successful or other error, just output the result
+      echo "$output"
     fi
 }
 
