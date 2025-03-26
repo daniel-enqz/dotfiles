@@ -38,6 +38,9 @@
   # Get default branch name (copied from https://stackoverflow.com/a/67672350/14870317)
   defaultBranch = !git symbolic-ref refs/remotes/origin/HEAD | cut -d'/' -f4
 
+  # Push and copy command to clipboard if it sets upstream
+  gp = !f() { COMMAND=$(git push 2>&1 | grep "git push --set-upstream" | sed "s/    //"); if [ -n "$COMMAND" ]; then echo "$COMMAND" | pbcopy && echo "Command copied to clipboard: $COMMAND"; else git push; fi; }; f
+  
   # Clean merged branches (adapted from https://stackoverflow.com/a/6127884/14870317)
   sweep = !git branch --merged $(git defaultBranch) | grep -E -v " $(git defaultBranch)$" | xargs -r git branch -d && git remote prune origin
 
