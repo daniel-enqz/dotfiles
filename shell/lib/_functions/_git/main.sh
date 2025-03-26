@@ -54,10 +54,6 @@ gp() {
             echo "$suggested_cmd" | pbcopy
             echo "No upstream branch. Command copied to clipboard:"
             echo "$suggested_cmd"
-        elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-            echo "$suggested_cmd" | xclip -selection clipboard
-            echo "No upstream branch. Command copied to clipboard:"
-            echo "$suggested_cmd"
         else
             echo "No upstream branch. Please run:"
             echo "$suggested_cmd"
