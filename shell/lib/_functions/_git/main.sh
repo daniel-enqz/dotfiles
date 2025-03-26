@@ -53,7 +53,6 @@ gp() {
       echo "No upstream branch. Command copied to clipboard:"
       echo "$suggested_cmd"
     else
-      # If successful or other error, just output the result
       git push
     fi
 }
