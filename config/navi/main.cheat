@@ -51,7 +51,7 @@ nu aws credentials refresh
 nu aws shared-role-credentials refresh -i && nu codeartifact login maven
 
 # Refresh Prod Auth (others are: staging, ist)
-nu-br auth get-refresh-token --env=prod && nu-br auth get-access-token --env=prod
+nu-br auth get-refresh-token --env=prod --force && nu-br auth get-access-token --env=prod
 
 # Create Staging User
 nu-br-staging ser curl POST global factorio /api/customers/with-savings-account --env staging | jq
