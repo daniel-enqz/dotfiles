@@ -62,6 +62,12 @@ nu-br ser curl GET s2 blackleach "/api/customers/59e9e760-7277-46f3-8f19-0cbfbe1
 # Get Account ID
 nu-mx ser curl GET s0 credit-card-accounts "/api/customers/66498ffd-31ac-450d-958f-1a9a8b9255f2/account/basic"
 
+# Check if customer in experiment
+nu xp group s4 moises cff-pix-area-entry-point 5d900a85-063e-4675-af81-ea9b1c7321cc
+
+# Check if customer in dynamic list
+nu-br xp customer-dynamic-lists 5d900a85-063e-4675-af81-ea9b1c7321cc | grep pix-financing-control-2025
+
 % Git
 # Apply a stash
 git stash list | fzf | sed 's/:.*//' | xargs -I % git stash apply %
