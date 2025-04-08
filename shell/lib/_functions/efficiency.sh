@@ -22,3 +22,11 @@ function run_dart_test {
   # Return to the original directory
   cd "$current_dir" || { echo "Failed to return to original directory"; return 1; }
 }
+
+function cdnu() {
+  if [ $# -eq 0 ]; then
+    cd $NU_HOME
+  else
+    cd $NU_HOME/$1
+  fi
+}

@@ -44,13 +44,13 @@ alias gb='git branch'
 alias gco='git checkout'
 alias gia='git add'
 alias gac='ga --commit'
+alias gpl='git pull'
 alias gas='ga --summary'
 alias gcp='git cherry-pick'
 
 # Nubank
 alias cdnucer="cd $NU_HOME/.nu/certificates"
 alias cdnutok="cd $NU_HOME/.nu/tokens"
-alias cdnu="cd $NU_HOME"
 
 # Rails
 alias bt='bin/dev'
