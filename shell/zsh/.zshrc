@@ -98,3 +98,9 @@ unset key
 
 manage_tmux_session
 
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/daniel.enriquez/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/daniel.enriquez/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/daniel.enriquez/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/daniel.enriquez/Downloads/google-cloud-sdk/completion.zsh.inc'; fi

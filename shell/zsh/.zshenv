@@ -8,6 +8,10 @@ export OPENAI_API_KEY="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"
 # {mark} Homebrew PATH
 export PATH="/opt/homebrew/bin:$PATH"
 
+# GOOGLE CLOUD
+export GOOGLE_BIGQUERY_CLIENT_ID="32555940559.apps.googleusercontent.com"
+export GOOGLE_BIGQUERY_CLIENT_SECRET="ZmssLNjJy2998hD4CTg2ejr2"
+
 # GPU
 export GPG_TTY=$(tty)
 export PINENTRY_USER_DATA="USE_CURSES=1"
