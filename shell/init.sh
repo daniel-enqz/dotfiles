@@ -14,3 +14,7 @@ done
 for gitFunctionsToSource in "$DOTFILES_DIR/shell/lib/_functions/_git/"*; do
   source "$gitFunctionsToSource"
 done
+
+for syncFunctionsToSource in "$DOTFILES_DIR/shell/lib/_functions/_sync/"*; do
+  source "$syncFunctionsToSource"
+done
