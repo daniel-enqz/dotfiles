@@ -17,20 +17,7 @@ function _get_pass_remote() {
   fi
 }
 
-# Función: pass_git status
-function passsts() {
-  # Esta función no necesita remoto, solo muestra estado local
-  echo "Verificando estado del repositorio..."
-  pass git status
-  echo ""
-  echo "Remotos configurados:"
-  pass git remote -v
-  echo ""
-  echo "Rama actual:"
-  pass git branch -vv
-}
-
-functio passst_with_remote() {
+function passst() {
   # Esta función sí necesita remoto.
   echo "Verificando estado del repositorio..."
   local REMOTE=$(_get_pass_remote)
