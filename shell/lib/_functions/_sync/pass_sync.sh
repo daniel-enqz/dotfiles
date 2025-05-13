@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Función para determinar el remoto apropiado basado en la red
-function get_pass_remote() {
+function _get_pass_remote() {
   local PI_LOCAL_IP="192.168.0.14"
   local PI_HOSTNAME="raspberry"
   local TIMEOUT=1
