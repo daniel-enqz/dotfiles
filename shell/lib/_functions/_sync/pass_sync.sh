@@ -17,14 +17,15 @@ function _get_pass_remote() {
   fi
 }
 
-function passst() {
+function passt() {
   # Esta función sí necesita remoto.
   echo "Verificando estado del repositorio..."
   local REMOTE=$(_get_pass_remote)
   local BRANCH="master"
 
-  pass git status $REMOTE $BRANCH
-
+  cd ~/.password-store
+  git fetch $REMOTE $BRANCH
+  git diff $REMOTE/$BRANCH
 }
 
 # Función: pass_git pull
