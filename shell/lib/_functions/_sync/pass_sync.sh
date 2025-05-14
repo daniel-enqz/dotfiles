@@ -44,23 +44,7 @@ function passt() {
     echo "Recomendación: Ejecuta 'passpsh' para actualizar el repositorio remoto"
   else
     echo "✅ Repositorio sincronizado: Tu repositorio local está al día con el remoto"
-  fi
-  
-  # Show modified files in working directory
-  local MODIFIED=$(git status --porcelain | wc -l)
-  if [ $MODIFIED -gt 0 ]; then
-    echo -e "\n📝 Archivos modificados no confirmados:"
-    git status --short
-    echo "Recomendación: Confirma los cambios con 'pass git commit -a -m \"mensaje\"' antes de sincronizar"
-  fi
-  
-  # Show actual diff if requested
-  echo -e "\n¿Quieres ver los cambios detallados? (s/N)"
-  read -r response
-  if [[ "$response" =~ ^([sS])$ ]]; then
-    echo -e "\nCambios entre local y remoto:"
-    git diff $REMOTE/$BRANCH
-  fi
+  fi  
 }
 
 # Función: pass_git pull
