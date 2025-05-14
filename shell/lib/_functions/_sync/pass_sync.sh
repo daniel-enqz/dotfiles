@@ -39,6 +39,7 @@ function passt() {
   fi
   
   local BRANCH="master"
+  cd ~/.password-store || return 1
   
   # Fetch from remote first
   if ! git fetch "$REMOTE" "$BRANCH"; then
